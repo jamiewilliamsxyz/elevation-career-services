@@ -6,7 +6,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<header>
+	<header class="ecs-header">
 		<nav>
 			<?php
 			if ( has_custom_logo() ) :
@@ -31,6 +31,8 @@
 				)
 			);
 			?>
+
+			<button class="ecs-btn"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></button>
 		</nav>
 	</header>
 
