@@ -9,6 +9,18 @@
 	<header>
 		<nav>
 			<?php
+			if ( has_custom_logo() ) :
+				the_custom_logo();
+			else :
+				?>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<?php bloginfo( 'name' ); ?>
+				</a>
+				<?php
+			endif;
+			?>
+
+			<?php
 			wp_nav_menu(
 				array(
 					'theme_location'  => 'ecs-navbar-menu',
