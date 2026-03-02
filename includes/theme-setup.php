@@ -13,6 +13,7 @@ function ecs_setup_theme() {
 	);
 
 	// Theme Support
+	add_theme_support( 'menus' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'editor-styles' );
@@ -26,5 +27,10 @@ function ecs_setup_theme() {
 			'flex-width'           => true,
 			'unlink-homepage-logo' => true,
 		)
+	);
+
+	// Menu Registration
+	register_nav_menus(
+		array( 'ecs-navbar-menu' => __( 'Navbar Menu Location', 'elevation-career-services' ) )
 	);
 }
