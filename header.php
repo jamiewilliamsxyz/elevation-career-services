@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
 	<header class="ecs-header">
-		<nav>
+		<nav id="ecs-header-nav">
 			<?php
 			if ( has_custom_logo() ) :
 				the_custom_logo();
@@ -20,20 +20,29 @@
 			endif;
 			?>
 
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location'  => 'ecs-navbar-menu',
-					'menu_class'      => 'ecs-navbar-menu',
-					'container_class' => 'ecs-navbar-menu-container',
-					'container_id'    => 'ecs-navbar-menu-container',
-					'fallback_cb'     => false,
-				)
-			);
-			?>
+			<div id="ecs-navbar-container" class="ecs-navbar-container">
+				<div class="ecs-navbar-divider"></div>
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'ecs-navbar-menu',
+						'menu_class'     => 'ecs-navbar-menu',
+						'container_id'   => 'ecs-navbar-menu-container',
+						'fallback_cb'    => false,
+						'container'      => false,
+					)
+				);
+				?>
+				<div class="ecs-navbar-divider"></div>
+				<button class="ecs-btn ecs-navbar-btn-mobile"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></button>
+			</div>
 
-			<button class="ecs-btn"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></button>
+
+			<button class="ecs-btn ecs-navbar-btn-desktop"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></button>
+			
+			<button id="ecs-navbar-toggle" class="ecs-navbar-toggle"  aria-label="Open menu" aria-expanded="false">
+				<?php echo file_get_contents( get_template_directory() . '/assets/icons/ecs-x-icon.svg' ); ?>
+				<?php echo file_get_contents( get_template_directory() . '/assets/icons/ecs-menu-icon.svg' ); ?>
+			</button>
 		</nav>
 	</header>
-
-

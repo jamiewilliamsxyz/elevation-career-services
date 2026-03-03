@@ -6,7 +6,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 // Enqueue Scripts/Styles
 add_action( 'wp_enqueue_scripts', 'ecs_enqueue_scripts' );
 
-
 function ecs_enqueue_scripts() {
 	$template_uri = get_template_directory_uri();
 	$version      = wp_get_theme()->get( 'Version' );
@@ -23,5 +22,13 @@ function ecs_enqueue_scripts() {
 		$template_uri . '/assets/css/main.css',
 		array(),
 		$version
+	);
+
+	wp_enqueue_script(
+		'ecs-navbar-menu-toggle-js',
+		$template_uri . '/assets/js/navbar-menu-toggle.js',
+		array(),
+		$version,
+		true
 	);
 }
