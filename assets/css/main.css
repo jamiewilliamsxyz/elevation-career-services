@@ -3,3 +3,9 @@
 
 /* Components */
 @import url("components/buttons.css");
+
+/* Typography */
+@import url("typography.css");
+
+/* Variables */
+@import url("variables.css");

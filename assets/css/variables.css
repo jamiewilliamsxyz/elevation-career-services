@@ -1,4 +1,9 @@
 :root {
   --ecs-sm-border-radius: 4px;
   --ecs-border-radius: 6px;
+  --ecs-dark-grey: #6b7280;
+  --ecs-grey: #9ca3af;
+  --ecs-light-grey: #d1d5db;
+  --ecs-lightest-grey: #e5e7eb;
+  --ecs-primary-hover-colour: #1338cc;
 }

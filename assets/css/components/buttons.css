@@ -1,18 +1,15 @@
 .ecs-btn {
   padding: 0.75em 1.5rem;
-  font-size: 1rem;
-  border-radius: 6px;
+  border-radius: var(--ecs-border-radius);
   color: white;
   background-color: var(--wp--preset--color--primary);
   border: none;
   cursor: pointer;
   transition: background-color 300ms ease;
-  font-weight: 500;
-  font-family: inherit;
 }
 
 .ecs-btn:hover {
-  background-color: #1338cc;
+  background-color: var(--ecs-primary-hover-colour);
 }
 
 .ecs-btn:active {
