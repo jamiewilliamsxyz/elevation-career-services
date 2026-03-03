@@ -1,18 +1,5 @@
-.ecs-btn {
-  padding: 0.75em 1.5rem;
-  font-size: 1rem;
-  border-radius: 6px;
-  color: white;
-  background-color: var(--wp--preset--color--primary);
-  border: none;
-  cursor: pointer;
-  transition: background-color 300ms ease;
-}
+/* Layout */
+@import url("layout/header.css");
 
-.ecs-btn:hover {
-  background-color: #1338cc;
-}
-
-.ecs-btn:active {
-  background-color: #0f2e99;
-}
+/* Components */
+@import url("layout/buttons.css");
