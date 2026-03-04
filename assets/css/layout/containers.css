@@ -1,0 +1,43 @@
+main {
+  margin-top: 71px;
+}
+
+.ecs-container,
+.ecs-container-sm {
+  margin: 0 auto;
+  padding: 0 var(--ecs-x-padding);
+}
+
+.ecs-container {
+  max-width: 1132px;
+}
+
+.ecs-container-sm {
+  max-width: 750px;
+}
+
+.ecs-section-lg {
+  padding: 3rem 0;
+}
+
+.ecs-section-md {
+  padding: var(--ecs-x-padding) 0;
+}
+
+.ecs-section-sm {
+  padding: 20px 0;
+}
+
+@media (min-width: 782px) {
+  main {
+    margin-top: 76px;
+  }
+
+  .ecs-section-lg {
+    padding: 5rem 0;
+  }
+
+  .ecs-section-md {
+    padding: 3.25rem 0;
+  }
+}

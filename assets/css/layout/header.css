@@ -1,6 +1,8 @@
 .ecs-header {
   position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 100;
   background-color: white;
 }
 
@@ -8,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem var(--ecs-x-padding);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
   transition: box-shadow 300ms ease;
 }
@@ -28,7 +30,7 @@
   top: 71px;
   left: 0;
   width: 100%;
-  padding: 0 2rem 1rem 2rem;
+  padding: 0 var(--ecs-x-padding) 1rem var(--ecs-x-padding);
   display: flex;
   flex-direction: column;
   gap: 1rem;

@@ -1,6 +1,17 @@
 body {
   font-family: var(--wp--preset--font-family--body);
   color: var(--wp--preset--color--text);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 h1,
@@ -17,11 +28,11 @@ b {
 }
 
 h1 {
-  font-size: var(--wp--preset--font-size--xx-large);
+  font-size: var(--wp--preset--font-size--x-large);
 }
 
 h2 {
-  font-size: var(--wp--preset--font-size--x-large);
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -29,7 +40,7 @@ h3 {
 }
 
 h4 {
-  font-size: var(--wp--preset--font-size--medium);
+  font-size: 1.125rem;
 }
 
 button,
@@ -50,7 +61,7 @@ a {
 }
 
 a:hover {
-  color: var(--ecs-primary-hover-colour);
+  color: var(--wp--preset--color--primary-dark);
 }
 
 a,
@@ -60,11 +71,11 @@ a,
 
 .ecs-section-subtitle,
 .ecs-sm-text {
-  color: var(--ecs-dark-grey);
+  color: var(--wp--preset--color--neutral-mid);
 }
 
 .ecs-sm-text {
-  font-size: var(--wp-preset--font-size--small);
+  font-size: var(--wp--preset--font-size--small);
 }
 
 ::selection {
@@ -73,7 +84,14 @@ a,
 }
 
 @media (min-width: 782px) {
-  a,
+  h1 {
+    font-size: var(--wp--preset--font-size--xx-large);
+  }
+
+  h2 {
+    font-size: var(--wp--preset--font-size--x-large);
+  }
+
   .ecs-section-subtitle {
     font-size: 1.125rem;
   }

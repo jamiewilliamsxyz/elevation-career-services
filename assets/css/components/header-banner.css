@@ -1,0 +1,21 @@
+.ecs-header-banner {
+  text-align: center;
+  color: white;
+  background-color: var(--wp--preset--color--primary);
+  background-size: cover;
+  background-position: center;
+  height: fit-content;
+  position: relative;
+}
+
+.ecs-header-banner-has-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ecs-header-banner > .ecs-container {
+  position: relative;
+  z-index: 1;
+}

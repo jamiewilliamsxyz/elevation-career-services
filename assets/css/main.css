@@ -1,11 +1,17 @@
 /* Layout */
 @import url("layout/header.css");
+@import url("layout/containers.css");
 
 /* Components */
 @import url("components/buttons.css");
+@import url("components/header-banner.css");
 
 /* Typography */
 @import url("typography.css");
 
 /* Variables */
 @import url("variables.css");
+
+img {
+  border-radius: var(--ecs-border-radius-sm);
+}
