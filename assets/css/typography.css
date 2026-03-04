@@ -65,16 +65,21 @@ a:hover {
 }
 
 a,
-.ecs-section-subtitle {
+.ecs-section-subtitle,
+.ecs-page-subtitle {
   font-size: var(--wp--preset--font-size--normal);
 }
 
 .ecs-section-subtitle,
-.ecs-sm-text {
+.ecs-text-sm {
   color: var(--wp--preset--color--neutral-mid);
 }
 
-.ecs-sm-text {
+.ecs-page-subtitle {
+  color: var(--ecs-grey);
+}
+
+.ecs-text-sm {
   font-size: var(--wp--preset--font-size--small);
 }
 
@@ -92,7 +97,8 @@ a,
     font-size: var(--wp--preset--font-size--x-large);
   }
 
-  .ecs-section-subtitle {
+  .ecs-section-subtitle,
+  .ecs-page-subtitle {
     font-size: 1.125rem;
   }
 }

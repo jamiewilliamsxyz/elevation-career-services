@@ -5,6 +5,8 @@
 /* Components */
 @import url("components/buttons.css");
 @import url("components/header-banner.css");
+@import url("components/cards.css");
+@import url("components/no-posts.css");
 
 /* Typography */
 @import url("typography.css");
@@ -12,6 +14,7 @@
 /* Variables */
 @import url("variables.css");
 
+/* Other */
 img {
   border-radius: var(--ecs-border-radius-sm);
 }

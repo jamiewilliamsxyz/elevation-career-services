@@ -1,0 +1,6 @@
+.ecs-no-posts {
+  min-height: 68vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
