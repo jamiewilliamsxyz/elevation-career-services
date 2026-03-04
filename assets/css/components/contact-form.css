@@ -1,0 +1,44 @@
+.wpcf7-form {
+  padding-bottom: 1.5rem;
+}
+
+.ecs-form-group > p > span > input,
+.ecs-form-group > p > span > textarea {
+  font-family: inherit;
+  font-size: var(--wp--preset--font-size--normal);
+  border-radius: var(--ecs-border-radius-sm);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  border: solid 1px var(--ecs-light-grey);
+  transition: border-color 300ms ease;
+  color: var(--wp--preset--color--text);
+}
+
+.ecs-form-group > p > span > input:hover,
+.ecs-form-group > p > span > textarea:hover {
+  border-color: var(--ecs-grey);
+}
+
+.ecs-form-group > p > span > input:focus,
+.ecs-form-group > p > span > textarea:focus {
+  border-color: var(--wp--preset--color--primary);
+  outline: none;
+}
+
+.ecs-form-group > p > span > textarea {
+  resize: none;
+  height: 175px;
+}
+
+.ecs-form-group > p > span > input::placeholder,
+.ecs-form-group > p > span > textarea::placeholder {
+  color: var(--ecs-grey);
+}
+
+.ecs-form-group > p > label {
+  line-height: 2;
+}
+
+@media (min-width: 782px) {
+}

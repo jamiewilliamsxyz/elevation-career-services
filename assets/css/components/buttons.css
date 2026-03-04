@@ -6,6 +6,9 @@
   border: none;
   cursor: pointer;
   transition: background-color 300ms ease;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: var(--wp--preset--font-size--normal);
 }
 
 .ecs-btn:hover {
