@@ -1,5 +1,5 @@
 main {
-  margin-top: 71px;
+  margin-top: 75px;
 }
 
 .ecs-container,
@@ -30,7 +30,7 @@ main {
 
 @media (min-width: 782px) {
   main {
-    margin-top: 76px;
+    margin-top: 84px;
   }
 
   .ecs-section-lg {
