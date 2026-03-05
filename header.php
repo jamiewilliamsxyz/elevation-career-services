@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
-	<header class="ecs-header">
-		<nav id="ecs-header-nav">
+	<header id="ecs-header" class="ecs-header ecs-section-sm">
+		<nav class="ecs-container">
 			<?php
 			if ( has_custom_logo() ) :
 				the_custom_logo();
@@ -36,7 +38,6 @@
 				<div class="ecs-navbar-divider"></div>
 				<button class="ecs-btn ecs-navbar-btn-mobile"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></button>
 			</div>
-
 
 			<button class="ecs-btn ecs-navbar-btn-desktop"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></button>
 			

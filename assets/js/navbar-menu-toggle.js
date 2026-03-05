@@ -1,7 +1,7 @@
 const ecsNavbarToggle = document.getElementById("ecs-navbar-toggle");
 const ecsMenuIcon = document.getElementById("ecs-menu-icon");
 const ecsXIcon = document.getElementById("ecs-x-icon");
-const ecsHeaderNav = document.getElementById("ecs-header-nav");
+const ecsHeader = document.getElementById("ecs-header");
 const ecsNavbarContainer = document.getElementById("ecs-navbar-container");
 
 let ecsMenuIsOpen = false;
@@ -22,7 +22,7 @@ ecsNavbarToggle.addEventListener("click", () => {
   ecsXIcon.classList.toggle("ecs-menu-open");
 
   // Toggle shadow
-  ecsHeaderNav.classList.toggle("ecs-menu-open");
+  ecsHeader.classList.toggle("ecs-menu-open");
 
   // Show/hide menu
   ecsNavbarContainer.classList.toggle("ecs-menu-open");
