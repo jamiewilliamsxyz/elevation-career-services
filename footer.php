@@ -1,4 +1,14 @@
-<?php $template_dir = get_template_directory_uri(); ?>
+<?php
+$template_dir = get_template_directory_uri();
+$tagline      = get_theme_mod( 'ecs_company_tagline', get_bloginfo( 'description' ) );
+$copyright    = get_theme_mod( 'ecs_copyright_name', get_bloginfo( 'name' ) );
+$email        = get_theme_mod( 'ecs_email' );
+$phone        = get_theme_mod( 'ecs_phone' );
+$address      = get_theme_mod( 'ecs_address' );
+$facebook     = get_theme_mod( 'ecs_facebook' );
+$instagram    = get_theme_mod( 'ecs_instagram' );
+$linkedin     = get_theme_mod( 'ecs_linkedin' );
+?>
 
 <footer class="ecs-footer ecs-section-sm">
 	<div class="ecs-container">
@@ -17,31 +27,61 @@
 					endif;
 					?>
 				</div>
-				<p class="ecs-text-sm"><?php esc_html_e( 'Helping you land your next role with confidence', 'elevation-career-services' ); ?>.</p>
+				<p class="ecs-text-sm">
+					<?php echo nl2br( esc_html( $tagline ) ); ?>
+				</p>
+
+				<?php
+				if ( $facebook || $instagram || $linkedin ) :
+					?>
 				<div class="ecs-footer-social-icons">
-					<a href="https://www.facebook.com" rel="noopener" target="_blank">
-						<img src="<?php echo $template_dir; ?>/assets/icons/facebook.svg" alt="Facebook"/>
-					</a>
-					<a href="https://www.instagram.com" rel="noopener" target="_blank">
-						<img src="<?php echo $template_dir; ?>/assets/icons/instagram.svg" alt="Instagram" />
-					</a>
-					<a href="https://www.linkedin.com" rel="noopener" target="_blank">
-						<img src="<?php echo $template_dir; ?>/assets/icons/linkedin.svg" alt="LinkedIn" />
-					</a>
+					<?php if ( $facebook ) : ?>
+						<a href="<?php echo esc_url( $facebook ); ?>" rel="noopener" target="_blank">
+							<img src="<?php echo esc_url( $template_dir ); ?>/assets/icons/facebook.svg" alt="Facebook" aria-label="Facebook" />
+						</a>
+					<?php endif; ?>
+
+					<?php if ( $instagram ) : ?>
+						<a href="<?php echo esc_url( $instagram ); ?>" rel="noopener" target="_blank">
+							<img src="<?php echo esc_url( $template_dir ); ?>/assets/icons/instagram.svg" alt="Instagram" aria-label="Instagram" />
+						</a>
+					<?php endif; ?>
+
+					<?php if ( $linkedin ) : ?>
+						<a href="<?php echo esc_url( $linkedin ); ?>" rel="noopener" target="_blank">
+							<img src="<?php echo esc_url( $template_dir ); ?>/assets/icons/linkedin.svg" alt="LinkedIn" aria-label="LinkedIn" />
+						</a>
+					<?php endif; ?>
 				</div>
+					<?php
+				endif;
+				?>
 			</div>
 
 			<div class="ecs-footer-divider"></div>
-
-			<div class="ecs-footer-section">
-				<p class="ecs-footer-title"><?php esc_html_e( 'Get In Touch', 'elevation-career-services' ); ?></p>
-				<ul class="ecs-footer-details">
-					<li class="ecs-text-sm">contact@elevationcareerservices.co.uk</li>
-					<li class="ecs-text-sm">07123 456789</li>
-					<li class="ecs-text-sm">London, UK</li>
-				</ul>
-			</div>
+			
+			<?php
+			if ( $email || $phone || $address ) :
+				$contact_details = array_filter( array( $email, $phone, $address ) );
+				?>
+				<div class="ecs-footer-section">
+					<p class="ecs-footer-title">
+						<?php esc_html_e( 'Get In Touch', 'elevation-career-services' ); ?>
+					</p>
+					
+					<ul class="ecs-footer-details">
+						<?php
+						foreach ( $contact_details as $detail ) :
+							echo '<li class="ecs-text-sm">' . esc_html( $detail ) . '</li>';
+						endforeach;
+						?>
+					</ul>
+				</div>
+				<?php
+			endif;
+			?>
 		</div>
+
 		<div class="ecs-footer-divider ecs-footer-divider-desktop"></div>
 
 		<div class="ecs-footer-section ecs-footer-bottom-row-desktop">
@@ -55,7 +95,9 @@
 				)
 			);
 			?>
-			<p class="ecs-text-sm">@ 2026 Elevation Career Services</p>
+			<p class="ecs-text-sm">
+				&copy; <?php echo gmdate( 'Y' ) . ' ' . esc_html( $copyright ); ?>
+			</p>
 		</div>
 	</div>
 </footer>
