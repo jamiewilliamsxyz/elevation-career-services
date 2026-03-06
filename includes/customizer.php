@@ -102,7 +102,7 @@ function ecs_register_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'ecs_copyright_text',
+		'ecs_copyright_name',
 		array(
 			'default'           => '',
 			'sanitize_callback' => 'sanitize_text_field',
