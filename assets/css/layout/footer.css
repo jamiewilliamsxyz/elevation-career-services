@@ -39,7 +39,14 @@
   text-decoration: none;
   color: var(--wp--preset--color--neutral-mid);
   font-weight: 400;
-  transition: color 300ms;
+}
+
+.ecs-footer-links > li > a {
+  transition: color 300ms ease;
+}
+
+.ecs-footer-links > li > a:hover {
+  color: var(--wp--preset--color--primary);
 }
 
 .ecs-footer-social-icons,
