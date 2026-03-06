@@ -57,6 +57,10 @@
   gap: 1rem;
 }
 
+.ecs-footer-social-icons {
+  margin-top: 0.3rem;
+}
+
 .ecs-footer-links {
   list-style: none;
   padding: 0;
