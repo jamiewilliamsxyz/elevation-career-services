@@ -102,6 +102,28 @@ function ecs_register_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
+		'ecs_copyright_text',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'sanitize_text_field',
+
+		)
+	);
+
+	$wp_customize->add_control(
+		'ecs_copyright_name',
+		array(
+			'type'        => 'text',
+			'priority'    => 14,
+			'section'     => 'ecs_footer',
+			'label'       => __( 'Copyright Name', 'elevation-career-services' ),
+			'input_attrs' => array(
+				'placeholder' => 'e.g. Doe Services',
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
 		'ecs_facebook',
 		array(
 			'default'           => '',
@@ -114,7 +136,7 @@ function ecs_register_customizer( $wp_customize ) {
 		'ecs_facebook',
 		array(
 			'type'        => 'url',
-			'priority'    => 14,
+			'priority'    => 15,
 			'section'     => 'ecs_footer',
 			'label'       => __( 'Facebook URL', 'elevation-career-services' ),
 			'input_attrs' => array(
@@ -136,7 +158,7 @@ function ecs_register_customizer( $wp_customize ) {
 		'ecs_instagram',
 		array(
 			'type'        => 'url',
-			'priority'    => 15,
+			'priority'    => 16,
 			'section'     => 'ecs_footer',
 			'label'       => __( 'Instagram URL', 'elevation-career-services' ),
 			'input_attrs' => array(
@@ -158,7 +180,7 @@ function ecs_register_customizer( $wp_customize ) {
 		'ecs_linkedin',
 		array(
 			'type'        => 'url',
-			'priority'    => 16,
+			'priority'    => 17,
 			'section'     => 'ecs_footer',
 			'label'       => __( 'LinkedIn URL', 'elevation-career-services' ),
 			'input_attrs' => array(
