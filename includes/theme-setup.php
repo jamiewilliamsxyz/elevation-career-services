@@ -31,6 +31,9 @@ function ecs_setup_theme() {
 
 	// Menu Registration
 	register_nav_menus(
-		array( 'ecs-navbar-menu' => __( 'Navbar Menu Location', 'elevation-career-services' ) )
+		array(
+			'ecs-navbar-menu' => __( 'Navbar Menu Location', 'elevation-career-services' ),
+			'ecs-footer-menu' => __( 'Footer Menu Location', 'elevation-career-services' ),
+		)
 	);
 }

@@ -45,14 +45,16 @@
 		<div class="ecs-footer-divider ecs-footer-divider-desktop"></div>
 
 		<div class="ecs-footer-section ecs-footer-bottom-row-desktop">
-			<div class="ecs-footer-links">
-				<a href="<?php echo esc_url( home_url( '/terms' ) ); ?>">
-					<?php esc_html_e( 'Terms & Conditions', 'elevation-career-services' ); ?>
-				</a>
-				<a href="<?php echo esc_url( home_url( '/privacy' ) ); ?>">
-					<?php esc_html_e( 'Privacy Policy', 'elevation-career-services' ); ?>
-				</a>
-			</div>
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'ecs-footer-menu',
+					'menu_class'     => 'ecs-footer-links',
+					'fallback_cb'    => false,
+					'container'      => false,
+				)
+			);
+			?>
 			<p class="ecs-text-sm">@ 2026 Elevation Career Services</p>
 		</div>
 	</div>
