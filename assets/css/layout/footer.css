@@ -34,7 +34,7 @@
 }
 
 .ecs-footer-social-icons > a,
-.ecs-footer-links > a {
+.ecs-footer-links > li > a {
   font-size: 0.875rem;
   text-decoration: none;
   color: var(--wp--preset--color--neutral-mid);
@@ -48,6 +48,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.ecs-footer-links {
+  list-style: none;
+  padding: 0;
 }
 
 .ecs-footer-details {
