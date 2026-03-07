@@ -1,0 +1,45 @@
+.ecs-hero {
+  background-color: var(--wp--preset--color--text);
+  width: 100%;
+}
+
+.ecs-hero > .ecs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.ecs-hero-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ecs-hero-col > h1 {
+  color: white;
+  margin: 0;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+
+.ecs-hero-col > p {
+  color: var(--ecs-grey);
+}
+
+.ecs-hero-btn {
+  width: fit-content;
+  margin-top: 0.125rem;
+}
+
+@media (min-width: 782px) {
+  .ecs-hero > .ecs-container {
+    flex-direction: row;
+  }
+
+  .ecs-hero-img {
+    width: 50%;
+    max-height: 450px;
+  }
+}
