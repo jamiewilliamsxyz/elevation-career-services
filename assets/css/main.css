@@ -10,6 +10,12 @@
 @import url("components/no-posts.css");
 @import url("components/contact-form.css");
 
+/* Sections */
+@import url("sections/hero.css");
+@import url("sections/stats-bar.css");
+@import url("sections/about-snippet.css");
+@import url("sections/cta-banner.css");
+
 /* Typography */
 @import url("typography.css");
 
