@@ -1,0 +1,38 @@
+.ecs-stats-bar {
+  background-color: var(--wp--preset--color--background);
+  width: 100%;
+}
+
+.ecs-stats-bar > .ecs-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 1.25rem;
+  column-gap: 2rem;
+}
+
+.ecs-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ecs-stat > p {
+  margin: 0;
+}
+
+.ecs-stat-number {
+  color: var(--wp--preset--color--accent);
+  font-size: var(--wp--preset--font-size--x-large);
+  font-weight: 700;
+}
+
+.ecs-stat-text {
+  color: var(--wp--preset--color--neutral-mid);
+}
+
+@media (min-width: 782px) {
+  .ecs-stats-bar > .ecs-container {
+    gap: 7.5rem;
+  }
+}
