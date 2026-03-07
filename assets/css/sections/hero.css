@@ -25,6 +25,7 @@
 }
 
 .ecs-hero-col > p {
+  font-weight: 500;
   color: var(--ecs-grey);
 }
 
@@ -39,7 +40,7 @@
   }
 
   .ecs-hero-img {
-    width: 46%;
+    width: 45%;
     max-height: 450px;
   }
 
