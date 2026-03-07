@@ -39,7 +39,11 @@
   }
 
   .ecs-hero-img {
-    width: 50%;
+    width: 46%;
     max-height: 450px;
+  }
+
+  .ecs-hero-col > p {
+    font-size: 1.125rem;
   }
 }
