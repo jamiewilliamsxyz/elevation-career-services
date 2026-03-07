@@ -24,15 +24,6 @@ function ecs_enqueue_scripts() {
 		$version
 	);
 
-	if ( is_front_page() ) {
-		wp_enqueue_style(
-			'ecs-front-page-css',
-			$template_uri . '/assets/css/templates/front-page.css',
-			array(),
-			$version
-		);
-	}
-
 	if ( is_404() ) {
 		wp_enqueue_style(
 			'ecs-404-css',
