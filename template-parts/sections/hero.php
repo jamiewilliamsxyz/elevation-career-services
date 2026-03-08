@@ -1,11 +1,22 @@
+<?php
+$heading    = get_theme_mod( 'ecs_hero_heading', get_bloginfo( 'name' ) );
+$subheading = get_theme_mod( 'ecs_hero_subheading', get_bloginfo( 'description' ) );
+$btn_text   = get_theme_mod( 'ecs_hero_btn_text' );
+$btn_link   = get_theme_mod( 'ecs_hero_btn_link' );
+$img        = get_theme_mod( 'ecs_hero_img', get_template_directory_uri() . '/assets/images/hero-img-fallback.jpg' );
+?>
+
 <section class="ecs-section-lg ecs-hero">
 	<div class="ecs-container">
 		<div class="ecs-hero-col">
-			<h1><?php esc_html_e( 'Get Hired Faster With Professional Career Support', 'elevation-career-services' ); ?></h1>
-			<p><?php esc_html_e( 'From CV writing to interview coaching and LinkedIn optimisation - everything you need to land your next role with confidence', 'elevation-career-services' ); ?></p>
-			<button class="ecs-btn ecs-hero-btn"><?php esc_html_e( 'View Our Services', 'elevation-career-services' ); ?></button>
+			<h1><?php echo esc_html( $heading ); ?></h1>
+			<p><?php echo esc_html( $subheading ); ?></p>
+
+			<?php if ( $btn_text && $btn_link ) : ?>
+			<a href="<?php echo esc_url( $btn_link ); ?>" class="ecs-btn ecs-hero-btn"><?php echo esc_html( $btn_text ); ?></a>
+			<?php endif; ?>
 		</div>
 
-		<img class="ecs-hero-img" alt="Two people shaking hands at an office desk" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/hero-img.jpg" />
+		<img class="ecs-hero-img" alt="<?php esc_attr_e( 'Hero image', 'elevation-career-services' ); ?>" src="<?php echo esc_url( $img ); ?>" />
 	</div>
 </section>

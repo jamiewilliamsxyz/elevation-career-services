@@ -15,6 +15,17 @@
   background-color: var(--ecs-primary-hover-colour);
 }
 
-.ecs-btn:active {
+.ecs-btn:active,
+a.ecs-btn:active {
   background-color: #0f2e99;
+}
+
+a.ecs-btn {
+  text-decoration: none;
+  line-height: normal;
+}
+
+a.ecs-btn:hover {
+  background-color: var(--ecs-primary-hover-colour);
+  color: white;
 }
