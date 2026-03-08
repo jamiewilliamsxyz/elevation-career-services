@@ -13,7 +13,7 @@ $img        = get_theme_mod( 'ecs_hero_img', get_template_directory_uri() . '/as
 			<p><?php echo esc_html( $subheading ); ?></p>
 
 			<?php if ( $btn_text && $btn_link ) : ?>
-			<a href="<?php echo esc_url( $btn_link ); ?>" class="ecs-btn ecs-hero-btn"><?php echo esc_html( $btn_text ); ?></a>
+				<a href="<?php echo esc_url( $btn_link ); ?>" class="ecs-btn ecs-hero-btn"><?php echo esc_html( $btn_text ); ?></a>
 			<?php endif; ?>
 		</div>
 
