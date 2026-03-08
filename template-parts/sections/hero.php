@@ -1,6 +1,6 @@
 <?php
-$heading    = get_theme_mod( 'ecs_hero_heading', get_bloginfo( 'name' ) );
-$subheading = get_theme_mod( 'ecs_hero_subheading', get_bloginfo( 'description' ) );
+$heading    = get_theme_mod( 'ecs_hero_heading' ) ? get_theme_mod( 'ecs_hero_heading' ) : get_bloginfo( 'name' );
+$subheading = get_theme_mod( 'ecs_hero_subheading' ) ? get_theme_mod( 'ecs_hero_subheading' ) : get_bloginfo( 'description' );
 $btn_text   = get_theme_mod( 'ecs_hero_btn_text' );
 $btn_link   = get_theme_mod( 'ecs_hero_btn_link' );
 $img        = get_theme_mod( 'ecs_hero_img' );
