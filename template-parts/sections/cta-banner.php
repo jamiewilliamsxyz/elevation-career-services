@@ -3,9 +3,7 @@ $heading    = get_theme_mod( 'ecs_cta_banner_heading' );
 $subheading = get_theme_mod( 'ecs_cta_banner_subheading' );
 $btn_text   = get_theme_mod( 'ecs_cta_banner_btn_text' );
 $btn_link   = get_theme_mod( 'ecs_cta_banner_btn_link' );
-?>
 
-<?php
 if ( ! $heading && ! $subheading && ! ( $btn_text && $btn_link ) ) {
 	return;
 }
