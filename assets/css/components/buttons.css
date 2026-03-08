@@ -26,6 +26,5 @@ a.ecs-btn {
 }
 
 a.ecs-btn:hover {
-  background-color: var(--ecs-primary-hover-colour);
   color: white;
 }
