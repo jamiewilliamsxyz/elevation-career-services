@@ -3,7 +3,7 @@ $heading    = get_theme_mod( 'ecs_hero_heading', get_bloginfo( 'name' ) );
 $subheading = get_theme_mod( 'ecs_hero_subheading', get_bloginfo( 'description' ) );
 $btn_text   = get_theme_mod( 'ecs_hero_btn_text' );
 $btn_link   = get_theme_mod( 'ecs_hero_btn_link' );
-$img        = get_theme_mod( 'ecs_hero_img', get_template_directory_uri() . '/assets/images/hero-img-fallback.jpg' );
+$img        = get_theme_mod( 'ecs_hero_img' );
 ?>
 
 <section class="ecs-section-lg ecs-hero">
@@ -17,6 +17,8 @@ $img        = get_theme_mod( 'ecs_hero_img', get_template_directory_uri() . '/as
 			<?php endif; ?>
 		</div>
 
-		<img class="ecs-hero-img" alt="<?php esc_attr_e( 'Hero image', 'elevation-career-services' ); ?>" src="<?php echo esc_url( $img ); ?>" />
+		<?php if ( $img ) : ?>
+			<img class="ecs-hero-img" alt="<?php esc_attr_e( 'Hero image', 'elevation-career-services' ); ?>" src="<?php echo esc_url( $img ); ?>" />
+		<?php endif; ?>
 	</div>
 </section>
