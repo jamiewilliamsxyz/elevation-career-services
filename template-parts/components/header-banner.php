@@ -9,7 +9,7 @@ $thumbnail = $args['thumbnail'] ?? '';
 	<?php echo $thumbnail ? 'ecs-header-banner-has-img' : ''; ?>"
 
 	<?php if ( $thumbnail ) : ?>
-		style="background-image: url( ' <?php echo esc_url( $thumbnail ); ?>' )"
+		style="background-image: url( '<?php echo esc_url( $thumbnail ); ?>' )"
 	<?php endif; ?>
 >
 
