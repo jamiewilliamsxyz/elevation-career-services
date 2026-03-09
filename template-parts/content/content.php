@@ -3,7 +3,7 @@
  
 	<span class="ecs-text-sm"><?php the_excerpt(); ?></span>
 
-	<a href="<?php echo the_permalink(); ?>">
+	<a href="<?php the_permalink(); ?>">
 		<?php esc_html_e( 'Find out more', 'elevation-career-services' ); ?>
 	</a>
 </article>
