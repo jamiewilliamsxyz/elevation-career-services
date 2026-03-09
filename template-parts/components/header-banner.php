@@ -19,6 +19,5 @@ $thumbnail = $args['thumbnail'] ?? '';
 		<?php if ( $subtitle ) : ?>
 			<div class="ecs-page-subtitle"><?php echo wp_kses_post( $subtitle ); ?></div>
 		<?php endif; ?>	
-		
 	</div>
 </header>
