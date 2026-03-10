@@ -7,7 +7,6 @@ if ( ! is_a( $product, WC_Product::class ) || ! $product->is_visible() ) {
 }
 
 $icon = get_field( 'service_icon' );
-
 ?>
 
 <article id="product-<?php the_ID(); ?>" <?php wc_product_class( 'ecs-product-card', $product ); ?>>
