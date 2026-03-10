@@ -21,7 +21,7 @@ add_action(
 						'name'              => 'service_icon',
 						'aria-label'        => '',
 						'type'              => 'image',
-						'instructions'      => 'Upload a square icon for this product. SVG or PNG.',
+						'instructions'      => 'Upload a square PNG icon for this service.',
 						'required'          => 0,
 						'conditional_logic' => 0,
 						'wrapper'           => array(
@@ -37,7 +37,7 @@ add_action(
 						'max_width'         => '',
 						'max_height'        => '',
 						'max_size'          => '',
-						'mime_types'        => 'svg, png',
+						'mime_types'        => 'png',
 						'allow_in_bindings' => 0,
 						'preview_size'      => 'thumbnail',
 					),
