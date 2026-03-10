@@ -23,6 +23,7 @@ a.ecs-btn:active {
 a.ecs-btn {
   text-decoration: none;
   line-height: normal;
+  text-align: center;
 }
 
 a.ecs-btn:hover {

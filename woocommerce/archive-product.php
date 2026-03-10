@@ -17,7 +17,7 @@
 			<?php
 			if ( have_posts() ) :
 				?>
-				<div class="ecs-post-cards-container"> 
+				<div class="ecs-product-cards-container"> 
 					<?php
 					while ( have_posts() ) :
 						the_post();
