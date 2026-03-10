@@ -18,7 +18,7 @@
 					<div class="ecs-text-sm ecs-product-card-desc"><?php echo wp_kses_post( $product->get_short_description() ); ?></div>
 				</div>
 
-				<a class="ecs-btn"><?php esc_html_e( 'Add to Cart', 'elevation-career-services' ); ?></a>
+				<a class="ecs-btn"><?php esc_html_e( 'Add to Basket', 'elevation-career-services' ); ?></a>
 			</div>
 		</div>
 	</div>
