@@ -1,0 +1,65 @@
+.ecs-single-product > .ecs-section-lg > .ecs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.ecs-single-product-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ecs-single-product-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.ecs-single-product-title-price-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ecs-single-product-content {
+  margin-bottom: 1.25rem;
+}
+
+.ecs-single-product-title-price-sec > h1 {
+  margin: 0;
+}
+
+.ecs-single-product-title-price-sec > span {
+  font-weight: 500;
+}
+
+.ecs-single-product-desc {
+  margin: 1.5rem 0;
+}
+
+.ecs-single-product-included-sec {
+  margin: 1.5rem 0 2.25rem 0;
+}
+
+.ecs-single-product-included-sec > h2.ecs-section-subtitle {
+  font-family: var(--wp--preset--font-family--inter);
+}
+
+@media (min-width: 782px) {
+  .ecs-single-product > .ecs-section-lg > .ecs-container {
+    flex-direction: row;
+  }
+
+  .ecs-single-product-img {
+    width: 465px;
+    height: 465px;
+  }
+
+  .ecs-single-product-title-price-sec {
+    gap: 0.75rem;
+  }
+}
