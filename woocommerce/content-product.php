@@ -5,9 +5,20 @@ global $product;
 if ( ! is_a( $product, WC_Product::class ) || ! $product->is_visible() ) {
 	return;
 }
+
+$icon = get_field( 'service_icon' );
+
 ?>
 
 <article id="product-<?php the_ID(); ?>" <?php wc_product_class( 'ecs-product-card', $product ); ?>>
+	<?php if ( get_field( 'service_icon' ) ) : ?>
+		<img
+			src="<?php echo esc_url( $icon['url'] ); ?>"
+			alt="<?php echo esc_attr( $icon['alt'] ); ?>"
+			class="esc-product-card-icon"
+		/>
+	<?php endif; ?>
+
 	<div class="ecs-product-card-title-area">
 		<h3><?php the_title(); ?></h3>
 		<?php echo wp_kses_post( $product->get_price_html() ); ?>

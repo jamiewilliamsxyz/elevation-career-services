@@ -28,6 +28,7 @@
 
 .ecs-product-card {
   max-width: 280px;
+  min-width: 230px;
   gap: 1.25rem;
 }
 
@@ -52,6 +53,11 @@
 .ecs-post-card > span {
   -webkit-line-clamp: 2;
   flex: 1;
+}
+
+.esc-product-card-icon {
+  width: 2rem;
+  height: 2rem;
 }
 
 .ecs-product-card > .ecs-product-card-title-area {
