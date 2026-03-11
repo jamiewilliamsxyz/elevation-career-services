@@ -7,6 +7,7 @@ require_once $template_dir . '/includes/enqueue.php';
 require_once $template_dir . '/includes/customizer.php';
 require_once $template_dir . '/includes/woocommerce.php';
 require_once $template_dir . '/includes/acf.php';
+require_once $template_dir . '/includes/post-types.php';
 
 // Hide Admin Bar
 add_filter( 'show_admin_bar', '__return_false' );
