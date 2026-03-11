@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ecs/testimonials-slider",
+	"version": "0.1.0",
+	"title": "Testimonials Slider",
+	"category": "theme",
+	"icon": "format-quote",
+	"description": "Displays client testimonials in a slider, pulled from the Testimonials post type.",
+	"supports": {
+		"html": false,
+		"align": false
+	},
+	"textdomain": "elevation-career-services",
+	"editorScript": "file:./index.js",
+	"style": "file:./style.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
