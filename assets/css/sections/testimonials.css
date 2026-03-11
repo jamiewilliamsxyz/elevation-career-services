@@ -1,0 +1,14 @@
+.ecs-testimonials {
+  background-color: var(--wp--preset--color--background);
+  width: 100%;
+}
+
+.ecs-testimonials > .ecs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.ecs-testimonials-titles > p {
+  margin: 0;
+}

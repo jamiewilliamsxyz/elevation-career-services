@@ -1,0 +1,14 @@
+.ecs-featured-services {
+  background-color: white;
+  width: 100%;
+}
+
+.ecs-featured-services > .ecs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.ecs-featured-services-titles > p {
+  margin: 0;
+}

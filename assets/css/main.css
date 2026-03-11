@@ -13,6 +13,8 @@
 /* Sections */
 @import url("sections/hero.css");
 @import url("sections/stats-bar.css");
+@import url("sections/featured-services.css");
+@import url("sections/testimonials.css");
 @import url("sections/about-snippet.css");
 @import url("sections/cta-banner.css");
 

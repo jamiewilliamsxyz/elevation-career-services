@@ -1,8 +1,8 @@
 <section class="ecs-section-lg ecs-featured-services">
 	<div class="ecs-container">
-		<div class="ecs-front-page-section-titles">
+		<div class="ecs-featured-services-titles">
 			<h2><?php esc_html_e( 'Our Services', 'elevation-career-services' ); ?></h2>
-			<p><?php esc_html_e( 'Everything you need to get hired', 'elevation-career-services' ); ?></p>
+			<p class="ecs-section-subtitle"><?php esc_html_e( 'Everything you need to get hired', 'elevation-career-services' ); ?></p>
 		</div>
 
 		<?php echo do_blocks( '<!-- wp:ecs/featured-services /-->' ); ?>
