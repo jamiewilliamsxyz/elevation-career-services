@@ -1,6 +1,7 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 3,
+  "appearanceTools": true,
   "settings": {
     "color": {
       "palette": [
@@ -15,6 +16,7 @@
       "custom": false,
       "defaultPalette": false
     },
+
     "typography": {
       "fontSizes": [
         { "slug": "small", "size": "14px", "name": "Small" },
