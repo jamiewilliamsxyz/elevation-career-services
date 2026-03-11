@@ -10,6 +10,7 @@ function ecs_register_acf() {
 			return;
 	}
 
+	// Service Options
 	acf_add_local_field_group(
 		array(
 			'key'                   => 'group_69b009ec76815',
@@ -106,6 +107,7 @@ function ecs_register_acf() {
 		)
 	);
 
+	// Testimonials
 	acf_add_local_field_group(
 		array(
 			'key'                   => 'group_69b14d0c8451c',
