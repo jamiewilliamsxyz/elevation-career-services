@@ -6,9 +6,29 @@
 .ecs-testimonials > .ecs-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ecs-testimonials-titles {
+  text-align: center;
+}
+
+.ecs-testimonials-titles > h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
 }
 
 .ecs-testimonials-titles > p {
   margin: 0;
+}
+
+.ecs-featured-services-titles {
+  text-align: center;
+}
+
+@media (min-width: 782px) {
+  .ecs-testimonials > .ecs-container {
+    gap: 3.5rem;
+  }
 }
