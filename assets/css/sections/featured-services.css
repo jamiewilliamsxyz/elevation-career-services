@@ -6,9 +6,25 @@
 .ecs-featured-services > .ecs-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ecs-featured-services-titles {
+  text-align: center;
+}
+
+.ecs-featured-services-titles > h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
 }
 
 .ecs-featured-services-titles > p {
   margin: 0;
+}
+
+@media (min-width: 782px) {
+  .ecs-featured-services > .ecs-container {
+    gap: 3.5rem;
+  }
 }
