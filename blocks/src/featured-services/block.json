@@ -9,7 +9,13 @@
 	"description": "Displays featured services pulled from WooCommerce products.",
 	"supports": {
 		"html": false,
-		"align": false
+		"color": {
+			"text": false
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		}
 	},
 	"textdomain": "elevation-career-services",
 	"editorScript": "file:./index.js",
