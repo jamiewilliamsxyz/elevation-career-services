@@ -17,6 +17,12 @@
 			"padding": true
 		}
 	},
+	"attributes": {
+		"count": {
+			"type": "number",
+			"default": 3
+		}
+	},
 	"textdomain": "elevation-career-services",
 	"editorScript": "file:./index.js",
 	"style": "file:./style.scss",
