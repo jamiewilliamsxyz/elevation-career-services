@@ -279,6 +279,104 @@ function ecs_register_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_section(
+		'ecs_featured_services_section',
+		array(
+			'title'       => __( 'Featured Services', 'elevation-career-services' ),
+			'description' => __( 'Add featured services section content here', 'elevation-career-services' ),
+			'capability'  => 'edit_theme_options',
+			'panel'       => 'ecs_front_page_panel',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'ecs_featured_services_heading',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'sanitize_text_field',
+
+		)
+	);
+
+	$wp_customize->add_control(
+		'ecs_featured_services_heading',
+		array(
+			'type'        => 'text',
+			'priority'    => 10,
+			'section'     => 'ecs_featured_services_section',
+			'label'       => __( 'Heading', 'elevation-career-services' ),
+			'input_attrs' => array(
+				'placeholder' => __( 'e.g. Featured Services', 'elevation-career-services' ),
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'ecs_featured_services_subheading',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'sanitize_text_field',
+
+		)
+	);
+
+	$wp_customize->add_control(
+		'ecs_featured_services_subheading',
+		array(
+			'type'        => 'text',
+			'priority'    => 11,
+			'section'     => 'ecs_featured_services_section',
+			'label'       => __( 'Subheading', 'elevation-career-services' ),
+			'input_attrs' => array(
+				'placeholder' => __( 'A brief tagline for this section...', 'elevation-career-services' ),
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'ecs_featured_services_link_text',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'sanitize_text_field',
+
+		)
+	);
+
+	$wp_customize->add_control(
+		'ecs_featured_services_link_text',
+		array(
+			'type'        => 'text',
+			'priority'    => 12,
+			'section'     => 'ecs_featured_services_section',
+			'label'       => __( 'Link Text', 'elevation-career-services' ),
+			'input_attrs' => array(
+				'placeholder' => __( 'e.g. View More', 'elevation-career-services' ),
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'ecs_featured_services_link',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'sanitize_text_field',
+
+		)
+	);
+
+	$wp_customize->add_control(
+		'ecs_featured_services_link',
+		array(
+			'type'        => 'text',
+			'priority'    => 13,
+			'section'     => 'ecs_featured_services_section',
+			'label'       => __( 'Link', 'elevation-career-services' ),
+			'input_attrs' => array(
+				'placeholder' => __( 'e.g. /services', 'elevation-career-services' ),
+			),
+		)
+	);
+
+	$wp_customize->add_section(
 		'ecs_about_snippet_section',
 		array(
 			'title'       => __( 'About Snippet', 'elevation-career-services' ),
