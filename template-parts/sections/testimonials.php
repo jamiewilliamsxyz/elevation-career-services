@@ -1,8 +1,26 @@
+<?php
+$heading    = get_theme_mod( 'ecs_testimonials_heading' );
+$subheading = get_theme_mod( 'ecs_testimonials_subheading' );
+$link_text  = get_theme_mod( 'ecs_testimonials_link_text' );
+$link       = get_theme_mod( 'ecs_testimonials_link' );
+?>
+
 <section class="ecs-section-lg ecs-testimonials">
 	<div class="ecs-container">
 		<div class="ecs-testimonials-titles">
-			<h2><?php esc_html_e( 'What Our Clients Say', 'elevation-career-services' ); ?></h2>
-			<p class="ecs-section-subtitle"><?php esc_html_e( 'Real results from real people', 'elevation-career-services' ); ?></p>
+			<?php
+			if ( $heading ) :
+				?>
+				<h2><?php echo esc_html( $heading ); ?></h2>
+				<?php
+			endif;
+
+			if ( $subheading ) :
+				?>
+				<p class="ecs-section-subtitle"><?php echo esc_html( $subheading ); ?></p>
+				<?php
+			endif;
+			?>
 		</div>
 
 		<?php echo do_blocks( '<!-- wp:ecs/testimonials-slider /-->' ); ?>

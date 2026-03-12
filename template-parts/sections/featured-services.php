@@ -1,12 +1,38 @@
+<?php
+$heading    = get_theme_mod( 'ecs_featured_services_heading' );
+$subheading = get_theme_mod( 'ecs_featured_services_subheading' );
+$link_text  = get_theme_mod( 'ecs_featured_services_link_text' );
+$link       = get_theme_mod( 'ecs_featured_services_link' );
+?>
+
 <section class="ecs-section-lg ecs-featured-services">
 	<div class="ecs-container">
 		<div class="ecs-featured-services-titles">
-			<h2><?php esc_html_e( 'Our Services', 'elevation-career-services' ); ?></h2>
-			<p class="ecs-section-subtitle"><?php esc_html_e( 'Everything you need to get hired', 'elevation-career-services' ); ?></p>
+			<?php
+			if ( $heading ) :
+				?>
+				<h2><?php echo esc_html( $heading ); ?></h2>
+				<?php
+			endif;
+
+			if ( $subheading ) :
+				?>
+				<p class="ecs-section-subtitle"><?php echo esc_html( $subheading ); ?></p>
+				<?php
+			endif;
+			?>
 		</div>
 
-		<?php echo do_blocks( '<!-- wp:ecs/featured-services /-->' ); ?>
+		<?php
+		echo do_blocks( '<!-- wp:ecs/featured-services /-->' );
 
-		<a><?php esc_html_e( 'View All Services', 'elevation-career-services' ); ?></a>
+		if ( $link && $link_text ) :
+			?>
+			<a href="<?php echo esc_url( $link ); ?>">
+				<?php echo esc_html( $link_text ); ?>
+			</a>
+			<?php
+		endif;
+		?>
 	</div>
 </section>
