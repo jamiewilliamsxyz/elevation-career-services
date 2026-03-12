@@ -6,6 +6,7 @@
   background-position: center;
   height: fit-content;
   position: relative;
+  padding: 3.25rem 0;
 }
 
 .ecs-header-banner-has-img::before {
@@ -18,4 +19,12 @@
 .ecs-header-banner > .ecs-container {
   position: relative;
   z-index: 1;
+}
+
+.ecs-header-banner > .ecs-container > h1 {
+  margin: 0;
+}
+
+.ecs-header-banner > .ecs-container > div {
+  margin-top: 1.5rem;
 }

@@ -6,46 +6,45 @@
 .ecs-hero > .ecs-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 3rem;
+  align-items: center;
+  gap: 2rem;
 }
 
 .ecs-hero-col {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .ecs-hero-col > h1 {
   color: white;
   margin: 0;
-  line-height: 1.25;
   letter-spacing: normal;
 }
 
 .ecs-hero-col > p {
-  font-weight: 500;
-  color: var(--ecs-grey);
+  margin: 0;
 }
 
 .ecs-hero-btn {
   width: fit-content;
-  margin-top: 0.125rem;
+}
+
+.ecs-hero-img {
+  object-fit: cover;
+  width: 100%;
 }
 
 @media (min-width: 782px) {
   .ecs-hero > .ecs-container {
     flex-direction: row;
+    gap: 3.5rem;
   }
 
   .ecs-hero-img {
     object-fit: cover;
     width: 45%;
     max-height: 450px;
-  }
-
-  .ecs-hero-col > p {
-    font-size: 1.125rem;
   }
 }

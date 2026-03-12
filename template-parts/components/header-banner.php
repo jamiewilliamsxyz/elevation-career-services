@@ -5,8 +5,7 @@ $thumbnail = $args['thumbnail'] ?? '';
 ?>
 
 <header
-	class="ecs-header-banner ecs-section-md
-	<?php echo $thumbnail ? 'ecs-header-banner-has-img' : ''; ?>"
+	class="ecs-header-banner <?php echo $thumbnail ? 'ecs-header-banner-has-img' : ''; ?>"
 
 	<?php if ( $thumbnail ) : ?>
 		style="background-image: url( '<?php echo esc_url( $thumbnail ); ?>' )"

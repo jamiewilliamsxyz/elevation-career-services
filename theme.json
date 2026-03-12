@@ -19,11 +19,13 @@
 
     "typography": {
       "fontSizes": [
-        { "slug": "small", "size": "14px", "name": "Small" },
-        { "slug": "normal", "size": "16px", "name": "Normal" },
-        { "slug": "large", "size": "20px", "name": "Large" },
-        { "slug": "x-large", "size": "32px", "name": "XL" },
-        { "slug": "xx-large", "size": "48px", "name": "XXL" }
+        { "slug": "small", "size": "0.875rem", "name": "Small" },
+        { "slug": "normal", "size": "1rem", "name": "Normal" },
+        { "slug": "medium", "size": "1.125rem", "name": "Medium" },
+        { "slug": "large", "size": "1.25rem", "name": "Large" },
+        { "slug": "x-large", "size": "1.875rem", "name": "XL" },
+        { "slug": "xx-large", "size": "2.25rem", "name": "XXL" },
+        { "slug": "display", "size": "3rem", "name": "Display" }
       ],
 
       "fontFamilies": [

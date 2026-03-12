@@ -5,10 +5,9 @@
 
 .ecs-about-snippet > .ecs-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  gap: 2.125rem;
+  gap: 2rem;
 }
 
 .ecs-about-snippet > .ecs-container > img {
@@ -22,12 +21,11 @@
 @media (min-width: 782px) {
   .ecs-about-snippet > .ecs-container {
     flex-direction: row;
-    justify-content: space-between;
-    gap: 3rem;
+    gap: 3.5rem;
   }
 
   .ecs-about-snippet > .ecs-container > img {
-    width: 35%;
+    width: 38%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
   }

@@ -11,7 +11,7 @@
  */
 ?>
 
-<div <?php echo get_block_wrapper_attributes( array( 'class' => 'ecs-featured-services-block ecs-product-cards-container' ) ); ?>>
+<div <?php echo get_block_wrapper_attributes( array( 'class' => 'ecs-featured-services-block ecs-featured-product-cards-container' ) ); ?>>
 	<?php
 	$services = new WP_Query(
 		array(

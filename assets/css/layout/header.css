@@ -30,13 +30,13 @@
 .ecs-navbar-container {
   box-sizing: border-box;
   position: absolute;
-  top: 75px;
+  top: 74px;
   left: 0;
   width: 100%;
-  padding: 0 var(--ecs-x-padding) 20px var(--ecs-x-padding);
+  padding: 0 var(--ecs-x-padding) 1.25rem var(--ecs-x-padding);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   background-color: white;
   visibility: hidden;
   opacity: 0;
@@ -61,7 +61,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   padding: 0;
   margin: 0;
   line-height: 1;
@@ -69,9 +69,7 @@
 
 .ecs-navbar-divider {
   width: 100%;
-  height: 0.125rem;
-  background-color: var(--ecs-lightest-grey);
-  border-radius: var(--ecs-border-radius);
+  border-bottom: 0.125rem solid var(--ecs-lightest-grey);
 }
 
 .ecs-navbar-menu > .menu-item > a {

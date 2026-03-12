@@ -10,7 +10,7 @@ $img        = get_theme_mod( 'ecs_hero_img' );
 	<div class="ecs-container">
 		<div class="ecs-hero-col">
 			<h1><?php echo esc_html( $heading ); ?></h1>
-			<p><?php echo esc_html( $subheading ); ?></p>
+			<p class="ecs-page-subtitle"><?php echo esc_html( $subheading ); ?></p>
 
 			<?php if ( $btn_text && $btn_link ) : ?>
 				<a href="<?php echo esc_url( $btn_link ); ?>" class="ecs-btn ecs-hero-btn"><?php echo esc_html( $btn_text ); ?></a>

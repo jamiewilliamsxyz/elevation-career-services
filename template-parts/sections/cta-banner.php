@@ -16,7 +16,7 @@ if ( ! $heading && ! $subheading && ! ( $btn_text && $btn_link ) ) {
 		<?php endif; ?>
 
 		<?php if ( $subheading ) : ?>
-			<p><?php echo esc_html( $subheading ); ?></p>
+			<p class="ecs-page-subtitle"><?php echo esc_html( $subheading ); ?></p>
 		<?php endif; ?>
 
 		<?php if ( $btn_text && $btn_link ) : ?>
