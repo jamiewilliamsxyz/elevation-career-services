@@ -377,6 +377,60 @@ function ecs_register_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_section(
+		'ecs_testimonials_section',
+		array(
+			'title'       => __( 'Testimonials', 'elevation-career-services' ),
+			'description' => __( 'Add testimonials section content here', 'elevation-career-services' ),
+			'capability'  => 'edit_theme_options',
+			'panel'       => 'ecs_front_page_panel',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'ecs_testimonials_heading',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'sanitize_text_field',
+
+		)
+	);
+
+	$wp_customize->add_control(
+		'ecs_testimonials_heading',
+		array(
+			'type'        => 'text',
+			'priority'    => 10,
+			'section'     => 'ecs_testimonials_section',
+			'label'       => __( 'Heading', 'elevation-career-services' ),
+			'input_attrs' => array(
+				'placeholder' => __( 'e.g. Testimonials', 'elevation-career-services' ),
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'ecs_testimonials_subheading',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'sanitize_text_field',
+
+		)
+	);
+
+	$wp_customize->add_control(
+		'ecs_testimonials_subheading',
+		array(
+			'type'        => 'text',
+			'priority'    => 11,
+			'section'     => 'ecs_testimonials_section',
+			'label'       => __( 'Subheading', 'elevation-career-services' ),
+			'input_attrs' => array(
+				'placeholder' => __( 'A brief tagline for this section...', 'elevation-career-services' ),
+			),
+		)
+	);
+
+	$wp_customize->add_section(
 		'ecs_about_snippet_section',
 		array(
 			'title'       => __( 'About Snippet', 'elevation-career-services' ),
