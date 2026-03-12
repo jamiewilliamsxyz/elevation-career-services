@@ -9,7 +9,13 @@
 	"description": "Displays client testimonials in a slider, pulled from the Testimonials post type.",
 	"supports": {
 		"html": false,
-		"align": false
+		"color": {
+			"text": false
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		}
 	},
 	"textdomain": "elevation-career-services",
 	"editorScript": "file:./index.js",
