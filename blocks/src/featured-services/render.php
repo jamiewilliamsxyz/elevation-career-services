@@ -10,6 +10,26 @@
  * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
  */
 ?>
-<p <?php echo get_block_wrapper_attributes(); ?>>
-	<?php esc_html_e( 'Featured Services – hello from a dynamic block!', 'featured-services' ); ?>
-</p>
+
+<div <?php echo get_block_wrapper_attributes( array( 'class' => 'ecs-featured-services-block ecs-product-cards-container' ) ); ?>>
+	<?php
+	$services = new WP_Query(
+		array(
+			'post_type'      => 'product',
+			'posts_per_page' => 3,
+		)
+	);
+
+	if ( $services->have_posts() ) :
+		while ( $services->have_posts() ) :
+			$services->the_post();
+			global $product;
+			$product = wc_get_product( get_the_ID() );
+			get_template_part( 'woocommerce/content', 'product' );
+		endwhile;
+		wp_reset_postdata();
+	else :
+		get_template_part( 'template-parts/components/no-posts' );
+	endif;
+	?>
+</div>
