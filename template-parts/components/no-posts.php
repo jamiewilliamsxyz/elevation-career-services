@@ -1,4 +1,4 @@
-<div class="ecs-no-posts">
+<div class="ecs-no-posts ecs-section-md ecs-container">
 	<p class="ecs-section-subtitle">
 		<?php
 		if ( is_woocommerce() ) {

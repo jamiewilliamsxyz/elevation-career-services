@@ -9,6 +9,7 @@
 @import url("components/cards.css");
 @import url("components/no-posts.css");
 @import url("components/contact-form.css");
+@import url("components/pagination.css");
 
 /* Sections */
 @import url("sections/hero.css");

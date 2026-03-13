@@ -1,0 +1,52 @@
+nav.pagination {
+  margin-top: auto;
+  background-color: var(--ecs-lightest-grey);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav.pagination > .nav-links {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--wp--preset--color--text);
+}
+
+nav.pagination > .nav-links > .page-numbers {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--wp--preset--color--text);
+}
+
+nav.pagination > .nav-links > .current {
+  transition: color 300ms ease;
+  color: var(--wp--preset--color--primary);
+}
+
+nav.pagination > .nav-links > .page-numbers:hover {
+  color: var(--wp--preset--color--primary);
+}
+
+nav.pagination > .nav-links > .prev,
+nav.pagination > .nav-links > .next {
+  display: flex;
+  align-items: center;
+  margin: 0 0.25rem;
+}
+
+nav.pagination > .nav-links > .prev {
+  margin-right: 0.25rem;
+}
+
+nav.pagination > .nav-links > .next {
+  margin-left: 0.25rem;
+}
+
+.ecs-pagination-prev {
+  margin-right: 0.875rem;
+}
+
+.ecs-pagination-next {
+  margin-left: 0.875rem;
+}

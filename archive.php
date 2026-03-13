@@ -11,11 +11,11 @@
 	);
 	?>
 	
-	<section class="ecs-section-md">
-		<div class="ecs-container">
-			<?php
-			if ( have_posts() ) :
-				?>
+	<?php
+	if ( have_posts() ) :
+		?>
+		<section class="ecs-section-md">
+			<div class="ecs-container">
 				<div class="ecs-post-cards-container">
 					<?php
 					while ( have_posts() ) :
@@ -24,13 +24,15 @@
 					endwhile;
 					?>
 				</div>
-				<?php
-			else :
-				get_template_part( 'template-parts/components/no-posts' );
-			endif;
-			?>
-		</div>
-	</section>
+			</div>
+		</section>
+
+		<?php
+		get_template_part( 'template-parts/components/pagination' );
+	else :
+		get_template_part( 'template-parts/components/no-posts' );
+	endif;
+	?>
 </main>
 
 <?php get_footer(); ?>
