@@ -6,8 +6,7 @@
 		'template-parts/components/header-banner',
 		null,
 		array(
-			'title'    => post_type_archive_title( '', false ),
-			'subtitle' => get_the_archive_description(),
+			'title' => post_type_archive_title( '', false ),
 		)
 	);
 	?>
