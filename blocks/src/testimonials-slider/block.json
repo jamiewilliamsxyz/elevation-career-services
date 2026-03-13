@@ -1,25 +1,32 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 3,
-	"name": "ecs/testimonials-slider",
-	"version": "0.1.0",
-	"title": "Testimonials Slider",
-	"category": "theme",
-	"icon": "format-quote",
-	"description": "Displays client testimonials in a slider, pulled from the Testimonials post type.",
-	"supports": {
-		"html": false,
-		"color": {
-			"text": false
-		},
-		"spacing": {
-			"margin": true,
-			"padding": true
-		}
-	},
-	"textdomain": "elevation-career-services",
-	"editorScript": "file:./index.js",
-	"style": "file:./style.scss",
-	"render": "file:./render.php",
-	"viewScript": "file:./view.js"
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ecs/testimonials-slider",
+  "version": "0.1.0",
+  "title": "Testimonials Slider",
+  "category": "theme",
+  "icon": "format-quote",
+  "description": "Displays client testimonials in a slider, pulled from the Testimonials post type.",
+  "supports": {
+    "html": false,
+    "color": {
+      "background": false,
+      "text": false
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "count": {
+      "type": "number",
+      "default": 4
+    }
+  },
+  "textdomain": "elevation-career-services",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
 }
