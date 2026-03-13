@@ -28,8 +28,6 @@
 			get_template_part( 'woocommerce/content', 'product' );
 		endwhile;
 		wp_reset_postdata();
-	else :
-		get_template_part( 'template-parts/components/no-posts' );
 	endif;
 	?>
 </div>
