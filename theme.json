@@ -1,8 +1,11 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 3,
-  "appearanceTools": true,
   "settings": {
+    "appearanceTools": true,
+    "spacing": {
+      "units": ["px", "rem", "em", "%"]
+    },
     "color": {
       "palette": [
         { "slug": "primary", "color": "#1B4FFF", "name": "Primary" },

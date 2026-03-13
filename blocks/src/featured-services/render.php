@@ -16,7 +16,7 @@
 	$services = new WP_Query(
 		array(
 			'post_type'      => 'product',
-			'posts_per_page' => 3,
+			'posts_per_page' => $attributes['count'],
 		)
 	);
 
