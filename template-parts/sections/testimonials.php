@@ -1,4 +1,8 @@
 <?php
+if ( ! ecs_has_posts( 'ecs_testimonial' ) ) {
+	return;
+}
+
 $heading    = get_theme_mod( 'ecs_testimonials_heading' );
 $subheading = get_theme_mod( 'ecs_testimonials_subheading' );
 $link_text  = get_theme_mod( 'ecs_testimonials_link_text' );

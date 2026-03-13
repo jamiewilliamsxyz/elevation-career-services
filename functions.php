@@ -8,6 +8,7 @@ require_once $template_dir . '/includes/customizer.php';
 require_once $template_dir . '/includes/woocommerce.php';
 require_once $template_dir . '/includes/acf.php';
 require_once $template_dir . '/includes/post-types.php';
+require_once $template_dir . '/includes/helpers.php';
 
 // Register Block Types
 add_action( 'init', 'ecs_register_block_types' );

@@ -1,4 +1,8 @@
 <?php
+if ( ! ecs_has_posts( 'product' ) ) {
+	return;
+}
+
 $heading    = get_theme_mod( 'ecs_featured_services_heading' );
 $subheading = get_theme_mod( 'ecs_featured_services_subheading' );
 $link_text  = get_theme_mod( 'ecs_featured_services_link_text' );
