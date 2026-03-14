@@ -2,11 +2,18 @@
 
 <main>
 	<?php
+	$thumbnail = '';
+
+	if ( is_post_type_archive( 'ecs_resource' ) ) {
+		$thumbnail = get_theme_mod( 'ecs_resource_archive_banner_img' );
+	}
+
 	get_template_part(
 		'template-parts/components/header-banner',
 		null,
 		array(
-			'title' => post_type_archive_title( '', false ),
+			'title'     => post_type_archive_title( '', false ),
+			'thumbnail' => $thumbnail,
 		)
 	);
 	?>

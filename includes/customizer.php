@@ -832,4 +832,36 @@ function ecs_register_customizer( $wp_customize ) {
 			),
 		)
 	);
+
+	// Resources Archive
+	$wp_customize->add_section(
+		'ecs_resource_archive',
+		array(
+			'title'       => __( 'Resource Archive', 'elevation-career-services' ),
+			'description' => __( 'Adjust Resource Archive settings here', 'elevation-career-services' ),
+			'priority'    => 32,
+			'capability'  => 'edit_theme_options',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'ecs_resource_archive_banner_img',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'esc_url_raw',
+
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'ecs_resource_archive_banner_img',
+			array(
+				'priority' => 10,
+				'section'  => 'ecs_resource_archive',
+				'label'    => __( 'Banner Image', 'elevation-career-services' ),
+			)
+		)
+	);
 }
