@@ -1,21 +1,28 @@
 <?php global $product; ?>
 
-<article id="product-<?php the_ID(); ?>" <?php wc_product_class( 'ecs-single-product', $product ); ?>>
-	<div class="ecs-section-lg">
-		<div class="ecs-container">
+<article id="product-<?php the_ID(); ?>" <?php wc_product_class( 'ecs-single-product ecs-section-lg', $product ); ?>>
+	<div class="ecs-container">
+		<div class="ecs-single-product-content">
 			<?php echo wp_kses_post( $product->get_image( 'large', array( 'class' => 'ecs-single-product-img' ) ) ); ?>
-
-			<div class="ecs-single-product-content">
-				<div class="ecs-single-product-title-price-sec">
+			
+			<div class="ecs-single-product-content-col">
+				<div class="ecs-single-product-title-price-container">
 					<h1><?php echo esc_html( $product->get_name() ); ?></h1>
-					<?php echo wp_kses_post( $product->get_price_html() ); ?>
+					<div class="ecs-single-product-price"><?php echo wp_kses_post( $product->get_price_html() ); ?></div>
 				</div>
 
-				<p class="ecs-single-product-desc"><?php echo wp_kses_post( $product->get_description() ); ?></p>
+				<p><?php echo wp_kses_post( $product->get_description() ); ?></p>
 
-				<div class="ecs-single-product-included-sec">
-					<h2 class="ecs-section-subtitle"><?php esc_html_e( "What's Included?", 'elevation-career-services' ); ?></h2>
-					<div class="ecs-text-sm ecs-product-card-desc"><?php echo wp_kses_post( $product->get_short_description() ); ?></div>
+				<div class="ecs-single-product-lists">
+					<div class="ecs-single-product-list-container">
+						<h3 class="ecs-section-subtitle"><?php esc_html_e( "What's Included", 'elevation-career-services' ); ?></h3>
+						<div class="ecs-text-sm ecs-product-card-desc"><?php wp_kses_post( the_field( 'ecs_whats_included' ) ); ?></div>
+					</div>
+
+					<div class="ecs-single-product-list-container">
+						<h3 class="ecs-section-subtitle"><?php esc_html_e( 'How It Works', 'elevation-career-services' ); ?></h3>
+						<div class="ecs-text-sm ecs-product-card-desc"><?php wp_kses_post( the_field( 'ecs_how_it_works' ) ); ?></div>
+					</div>
 				</div>
 
 				<a class="ecs-btn"><?php esc_html_e( 'Add to Basket', 'elevation-career-services' ); ?></a>
