@@ -1,5 +1,5 @@
 .ecs-no-posts {
-  min-height: 68vh;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
