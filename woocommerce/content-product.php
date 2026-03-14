@@ -24,7 +24,7 @@ $icon = get_field( 'service_icon' );
 	</div>
  
 	<div class="ecs-text-sm ecs-product-card-desc">
-		<?php echo wp_kses_post( $product->get_short_description() ); ?>
+		<?php echo wp_kses_post( the_field( 'ecs_whats_included' ) ); ?>
 	</div>
 
 	<a class="ecs-btn" href="<?php the_permalink(); ?>">
