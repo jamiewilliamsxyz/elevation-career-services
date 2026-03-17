@@ -25,7 +25,7 @@
 					</div>
 				</div>
 
-				<a class="ecs-btn"><?php esc_html_e( 'Add to Basket', 'elevation-career-services' ); ?></a>
+				<?php woocommerce_template_single_add_to_cart(); ?>
 			</div>
 		</div>
 	</div>

@@ -10,7 +10,7 @@ $icon = get_field( 'service_icon' );
 ?>
 
 <article id="product-<?php the_ID(); ?>" <?php wc_product_class( 'ecs-product-card', $product ); ?>>
-	<?php if ( get_field( 'service_icon' ) ) : ?>
+	<?php if ( $icon ) : ?>
 		<img
 			src="<?php echo esc_url( $icon['url'] ); ?>"
 			alt="<?php echo esc_attr( $icon['alt'] ); ?>"

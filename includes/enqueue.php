@@ -33,7 +33,7 @@ function ecs_enqueue_scripts() {
 		);
 	}
 
-	if ( is_woocommerce() ) {
+	if ( is_woocommerce() || is_cart() || is_checkout() ) {
 		wp_enqueue_style(
 			'ecs-woocommerce-css',
 			$template_uri . '/assets/css/woocommerce.css',
