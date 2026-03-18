@@ -87,13 +87,6 @@
   gap: 2rem;
 }
 
-.ecs-section-md > .ecs-container > .woocommerce h1,
-.ecs-section-md > .ecs-container > .woocommerce h2,
-.ecs-section-md > .ecs-container > .woocommerce h3,
-.ecs-section-md > .ecs-container > .woocommerce p {
-  margin: 0;
-}
-
 @media (min-width: 782px) {
   .ecs-section-md > .ecs-container > .woocommerce {
     flex-direction: row;
@@ -200,4 +193,62 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+/* Checkout */
+.woocommerce-checkout h3 {
+  font-weight: 700;
+  font-family: var(--wp--preset--font-family--heading);
+  font-size: var(--wp--preset--font-size--x-large);
+  margin-bottom: 0.75rem;
+}
+
+.woocommerce-billing-fields input,
+.woocommerce-additional-fields__field-wrapper textarea {
+  font-family: inherit;
+  font-size: var(--wp--preset--font-size--normal);
+  border-radius: var(--ecs-border-radius-sm);
+  width: 100%;
+  padding: 0.65rem;
+  outline: none;
+  color: var(--wp--preset--color--text);
+}
+
+.woocommerce-additional-fields__field-wrapper textarea {
+  resize: none;
+  height: 175px;
+}
+
+.woocommerce-billing-fields input::placeholder,
+.woocommerce-shipping-fields textarea::placeholder,
+.woocommerce-billing-fields .select2-selection__placeholder {
+  color: var(--ecs-grey);
+}
+
+.wc_payment_methods {
+  background-color: white;
+  border-radius: var(--ecs-border-radius) var(--ecs-border-radius) 0 0;
+  border: solid 1px var(--ecs-lightest-grey);
+}
+
+.place-order {
+  background-color: white;
+  border-radius: 0 0 var(--ecs-border-radius) var(--ecs-border-radius);
+  border: solid 1px var(--ecs-lightest-grey);
+  border-top: none;
+}
+
+.payment_box {
+  background-color: var(--ecs-lightest-grey) !important;
+  border-radius: var(--ecs-border-radius) !important;
+}
+
+.payment_box::before {
+  border-bottom-color: var(--ecs-lightest-grey) !important;
+}
+
+@media (min-width: 782px) {
+  .woocommerce-checkout h3 {
+    font-size: var(--wp--preset--font-size--xx-large);
+  }
 }

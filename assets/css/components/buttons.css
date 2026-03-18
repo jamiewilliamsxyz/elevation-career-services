@@ -1,5 +1,6 @@
 .ecs-btn,
-.single_add_to_cart_button {
+.single_add_to_cart_button,
+#place_order {
   padding: 0.75em 1.5rem;
   border-radius: var(--ecs-border-radius);
   color: white;
@@ -13,12 +14,14 @@
 }
 
 .ecs-btn:hover,
-.single_add_to_cart_button:hover {
+.single_add_to_cart_button:hover,
+#place_order:hover {
   background-color: var(--ecs-primary-hover-colour);
 }
 
 .ecs-btn:active,
 .single_add_to_cart_button:active,
+#place_order:active,
 a.ecs-btn:active {
   background-color: #0f2e99;
 }
