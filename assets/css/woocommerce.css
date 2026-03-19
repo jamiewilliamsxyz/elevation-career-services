@@ -87,6 +87,10 @@
   gap: 2rem;
 }
 
+.woocommerce-order {
+  width: 100%;
+}
+
 .woocommerce-notices-wrapper,
 #wc-stripe-express-checkout__order-attribution-inputs {
   display: none;
