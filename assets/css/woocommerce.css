@@ -87,6 +87,11 @@
   gap: 2rem;
 }
 
+.woocommerce-notices-wrapper,
+#wc-stripe-express-checkout__order-attribution-inputs {
+  display: none;
+}
+
 @media (min-width: 782px) {
   .ecs-section-md > .ecs-container > .woocommerce {
     flex-direction: row;
