@@ -2,8 +2,6 @@
   text-align: center;
   color: white;
   background-color: var(--wp--preset--color--primary);
-  background-size: cover;
-  background-position: center;
   height: fit-content;
   position: relative;
   padding: 3.25rem 0;
@@ -14,11 +12,21 @@
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.ecs-header-banner-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .ecs-header-banner > .ecs-container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .ecs-header-banner > .ecs-container > h1 {

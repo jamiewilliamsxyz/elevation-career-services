@@ -5,12 +5,17 @@ $thumbnail = $args['thumbnail'] ?? '';
 ?>
 
 <header
-	class="ecs-header-banner <?php echo $thumbnail ? 'ecs-header-banner-has-img' : ''; ?>"
-
+	class="ecs-header-banner <?php echo $thumbnail ? 'ecs-header-banner-has-img' : ''; ?>">
+	
 	<?php if ( $thumbnail ) : ?>
-		style="background-image: url( '<?php echo esc_url( $thumbnail ); ?>' )"
+		<img 
+			src="<?php echo esc_url( $thumbnail ); ?>" 
+			alt=""
+			class="ecs-header-banner-img"
+			loading="eager"
+			fetchpriority="high"
+		>
 	<?php endif; ?>
->
 
 	<div class="ecs-container">
 		<h1><?php echo esc_html( $title ); ?></h1>

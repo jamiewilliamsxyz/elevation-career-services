@@ -1,3 +1,9 @@
+/* Variables */
+@import url("variables.css");
+
+/* Typography */
+@import url("typography.css");
+
 /* Layout */
 @import url("layout/header.css");
 @import url("layout/footer.css");
@@ -18,12 +24,6 @@
 @import url("sections/testimonials.css");
 @import url("sections/about-snippet.css");
 @import url("sections/cta-banner.css");
-
-/* Typography */
-@import url("typography.css");
-
-/* Variables */
-@import url("variables.css");
 
 /* Other */
 img {
