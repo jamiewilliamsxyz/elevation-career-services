@@ -10,7 +10,7 @@ if ( ! $heading && ! $subheading && ! ( $btn_text && $btn_link ) ) {
 ?>
 
 <section class="ecs-section-md ecs-cta-banner">
-	<div class="ecs-container">
+	<div class="ecs-container ecs-reveal">
 		<?php if ( $heading ) : ?>
 			<h2><?php echo esc_html( $heading ); ?></h2>
 		<?php endif; ?>

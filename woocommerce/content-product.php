@@ -9,7 +9,7 @@ if ( ! is_a( $product, WC_Product::class ) || ! $product->is_visible() ) {
 $icon = get_field( 'service_icon' );
 ?>
 
-<article id="product-<?php the_ID(); ?>" <?php wc_product_class( 'ecs-product-card', $product ); ?>>
+<article id="product-<?php the_ID(); ?>" <?php wc_product_class( 'ecs-product-card ecs-reveal', $product ); ?>>
 	<?php if ( $icon ) : ?>
 		<img
 			src="<?php echo esc_url( $icon['url'] ); ?>"

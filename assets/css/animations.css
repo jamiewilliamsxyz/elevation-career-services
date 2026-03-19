@@ -1,0 +1,12 @@
+.ecs-reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition:
+    opacity 700ms ease,
+    transform 700ms ease;
+}
+
+.ecs-reveal.ecs-is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

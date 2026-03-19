@@ -57,6 +57,10 @@
   flex: 1;
 }
 
+.ecs-post-card > a {
+  width: fit-content;
+}
+
 .esc-product-card-icon {
   width: 2rem;
   height: 2rem;

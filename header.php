@@ -36,10 +36,10 @@
 				);
 				?>
 				<div class="ecs-navbar-divider"></div>
-				<button class="ecs-btn ecs-navbar-btn-mobile"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></button>
+				<a href="<?php echo wc_get_page_permalink( 'shop' ); ?>" class="ecs-btn ecs-navbar-btn-mobile"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></a>
 			</div>
 
-			<button class="ecs-btn ecs-navbar-btn-desktop"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></button>
+			<a href="<?php echo wc_get_page_permalink( 'shop' ); ?>" class="ecs-btn ecs-navbar-btn-desktop"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></a>
 			
 			<button id="ecs-navbar-toggle" class="ecs-navbar-toggle"  aria-label="Open menu" aria-expanded="false">
 				<?php echo file_get_contents( get_template_directory() . '/assets/icons/ecs-x-icon.svg' ); ?>

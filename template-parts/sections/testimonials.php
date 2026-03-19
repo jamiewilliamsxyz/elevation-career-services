@@ -10,7 +10,7 @@ $link       = get_theme_mod( 'ecs_testimonials_link' );
 ?>
 
 <section class="ecs-section-lg ecs-testimonials">
-	<div class="ecs-container">
+	<div class="ecs-container ecs-reveal">
 		<div class="ecs-testimonials-titles">
 			<?php
 			if ( $heading ) :
