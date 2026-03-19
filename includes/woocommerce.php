@@ -13,17 +13,11 @@ function ecs_filter_woocommerce_styles( $styles ) {
 	return array();
 }
 
-// Buttons text
+// Button text
 add_filter( 'woocommerce_order_button_text', 'ecs_checkout_button_text' );
 
 function ecs_checkout_button_text() {
 	return __( 'Buy Now', 'elevation-career-services' );
-}
-
-add_filter( 'woocommerce_order_button_text', 'ecs_cart_proceed_button_text' );
-
-function ecs_cart_proceed_button_text() {
-	return __( 'Proceed to Checkout', 'elevation-career-services' );
 }
 
 // Remove checkout notices
