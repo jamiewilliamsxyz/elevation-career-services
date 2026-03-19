@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'ecs-page' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'ecs-page-wide' ); ?>>
 	<?php
 	get_template_part(
 		'template-parts/components/header-banner',
