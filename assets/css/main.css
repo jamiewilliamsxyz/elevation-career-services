@@ -25,9 +25,6 @@
 /* Variables */
 @import url("variables.css");
 
-/* Animations */
-@import url("animations.css");
-
 /* Other */
 img {
   border-radius: var(--ecs-border-radius-sm);

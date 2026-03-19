@@ -56,12 +56,4 @@ function ecs_enqueue_scripts() {
 		$version,
 		true
 	);
-
-	wp_enqueue_script(
-		'ecs-animate-js',
-		$template_uri . '/assets/js/animate.js',
-		array(),
-		$version,
-		true
-	);
 }
