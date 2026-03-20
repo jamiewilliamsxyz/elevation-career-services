@@ -16,7 +16,7 @@ h6 {
 
 h1,
 h2 {
-  font-weight: 700;
+  font-weight: 600;
   font-family: var(--wp--preset--font-family--heading);
 }
 
@@ -24,7 +24,7 @@ h3,
 h4,
 strong,
 b {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h1 {
@@ -58,7 +58,7 @@ button,
 a,
 label,
 .ecs-section-subtitle {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 button {

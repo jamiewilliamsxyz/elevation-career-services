@@ -23,14 +23,14 @@
 }
 
 .custom-logo {
-  height: 35px;
+  height: 30px;
   width: auto;
 }
 
 .ecs-navbar-container {
   box-sizing: border-box;
   position: absolute;
-  top: 74px;
+  top: 70px;
   left: 0;
   width: 100%;
   padding: 0 var(--ecs-x-padding) 1.25rem var(--ecs-x-padding);
@@ -73,16 +73,17 @@
 }
 
 .ecs-navbar-menu > .menu-item > a {
-  color: var(--wp--preset--color--text);
+  color: var(--wp--preset--color--neutral-mid);
   text-decoration: none;
-  font-size: var(--wp--preset--font-size--normal);
+  font-size: 0.95rem;
   transition: color 300ms ease;
   cursor: pointer;
+  font-weight: 400;
 }
 
 .ecs-navbar-menu > .current-menu-item > a,
 .ecs-navbar-menu > .menu-item > a:hover {
-  color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--text);
 }
 
 .ecs-navbar-toggle {
@@ -100,15 +101,71 @@
 
 .ecs-x-icon,
 .ecs-menu-icon.ecs-menu-open,
-.ecs-navbar-btn-desktop {
+.ecs-navbar-btn-desktop,
+.ecs-navbar-right-row-desktop {
   display: none;
+}
+
+.ecs-navbar-right-row-mobile {
+  display: flex;
+}
+
+.ecs-navbar-right-row-desktop,
+.ecs-navbar-right-row-mobile {
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ecs-navbar-basket {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 0.75rem;
+  transition: opacity 300ms ease;
+}
+
+.ecs-navbar-basket:hover {
+  color: white;
+  opacity: 0.75;
+}
+
+.ecs-navbar-basket:active {
+  opacity: 1;
+}
+
+.ecs-navbar-basket > img {
+  width: 1.9rem;
+  height: 1.9rem;
+}
+
+.ecs-navbar-basket > span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  bottom: 0.9rem;
+  right: 0.5rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: var(--wp--preset--color--accent);
+  border-radius: 100%;
 }
 
 @media (min-width: 782px) {
   .ecs-navbar-toggle,
   .ecs-navbar-divider,
-  .ecs-navbar-btn-mobile {
+  .ecs-navbar-btn-mobile,
+  .ecs-navbar-right-row-mobile {
     display: none;
+  }
+
+  .ecs-navbar-right-row-desktop {
+    display: flex;
   }
 
   .ecs-navbar-btn-desktop {
@@ -131,6 +188,6 @@
 
   .ecs-navbar-menu {
     flex-direction: row;
-    gap: 2.25rem;
+    gap: 2rem;
   }
 }

@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .ecs-hero-col > h1 {
@@ -25,9 +25,13 @@
 
 .ecs-hero-col > p {
   margin: 0;
+  letter-spacing: 0.01em;
+  line-height: 1.55;
+  color: #aab2bf;
 }
 
 .ecs-hero-btn {
+  margin-top: 0.5rem;
   width: fit-content;
 }
 
@@ -46,5 +50,9 @@
     object-fit: cover;
     width: 45%;
     max-height: 450px;
+  }
+
+  .ecs-hero-col > p {
+    font-size: var(--wp--preset--font-size--medium);
   }
 }

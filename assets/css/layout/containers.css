@@ -5,7 +5,7 @@ body {
 }
 
 main {
-  margin-top: 75px;
+  margin-top: 72px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@ main {
 
 @media (min-width: 782px) {
   main {
-    margin-top: 84px;
+    margin-top: 80px;
   }
 
   .ecs-section-lg {

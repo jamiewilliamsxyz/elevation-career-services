@@ -22,7 +22,7 @@ function ecs_setup_theme() {
 	add_theme_support(
 		'custom-logo',
 		array(
-			'height'               => 35,
+			'height'               => 30,
 			'width'                => 150,
 			'flex-width'           => true,
 			'unlink-homepage-logo' => true,

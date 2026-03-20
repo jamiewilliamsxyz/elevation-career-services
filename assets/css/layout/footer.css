@@ -46,7 +46,7 @@
 }
 
 .ecs-footer-links > li > a:hover {
-  color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--text);
 }
 
 .ecs-footer-social-icons,

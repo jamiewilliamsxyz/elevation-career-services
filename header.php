@@ -36,14 +36,28 @@
 				);
 				?>
 				<div class="ecs-navbar-divider"></div>
-				<a href="<?php echo wc_get_page_permalink( 'shop' ); ?>" class="ecs-btn ecs-navbar-btn-mobile"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></a>
+				<a href="<?php echo wc_get_page_permalink( 'shop' ); ?>" class="ecs-navbar-btn ecs-navbar-btn-mobile"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></a>
 			</div>
 
-			<a href="<?php echo wc_get_page_permalink( 'shop' ); ?>" class="ecs-btn ecs-navbar-btn-desktop"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></a>
+			<div class="ecs-navbar-right-row-desktop">
+				<a href="<?php echo wc_get_cart_url(); ?>" class="ecs-navbar-basket">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/basket.svg" alt="Basket" />
+					<span><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+				</a>
+				<a href="<?php echo wc_get_page_permalink( 'shop' ); ?>" class="ecs-navbar-btn ecs-navbar-btn-desktop"><?php esc_html_e( 'View Services', 'elevation-career-services' ); ?></a>
+			</div>
 			
-			<button id="ecs-navbar-toggle" class="ecs-navbar-toggle"  aria-label="Open menu" aria-expanded="false">
-				<?php echo file_get_contents( get_template_directory() . '/assets/icons/ecs-x-icon.svg' ); ?>
-				<?php echo file_get_contents( get_template_directory() . '/assets/icons/ecs-menu-icon.svg' ); ?>
-			</button>
+			<div class="ecs-navbar-right-row-mobile">
+				<a href="<?php echo wc_get_cart_url(); ?>" class="ecs-navbar-basket">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/basket.svg" alt="Basket" />
+					<span><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+				</a>
+
+				<button id="ecs-navbar-toggle" class="ecs-navbar-toggle"  aria-label="Open menu" aria-expanded="false">
+					<?php echo file_get_contents( get_template_directory() . '/assets/icons/ecs-x-icon.svg' ); ?>
+					<?php echo file_get_contents( get_template_directory() . '/assets/icons/ecs-menu-icon.svg' ); ?>
+				</button>
+			</div>
+
 		</nav>
 	</header>

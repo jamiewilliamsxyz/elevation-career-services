@@ -3,7 +3,7 @@
 <article id="product-<?php the_ID(); ?>" <?php wc_product_class( 'ecs-single-product ecs-section-lg', $product ); ?>>
 	<div class="ecs-container">
 		<div class="ecs-single-product-content">
-			<?php echo wp_kses_post( $product->get_image( 'large', array( 'class' => 'ecs-single-product-img' ) ) ); ?>
+			<div class="ecs-single-product-img-container"><?php echo wp_kses_post( $product->get_image( 'large', array( 'class' => 'ecs-single-product-img' ) ) ); ?></div>
 			
 			<div class="ecs-single-product-content-col">
 				<div class="ecs-single-product-title-price-container">
