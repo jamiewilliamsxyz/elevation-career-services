@@ -33,6 +33,15 @@ function ecs_enqueue_scripts() {
 		);
 	}
 
+	if ( is_page_template( 'page-contact.php' ) ) {
+		wp_enqueue_style(
+			'ecs-page-contact-css',
+			$template_uri . '/assets/css/templates/page-contact.css',
+			array(),
+			$version
+		);
+	}
+
 	if ( is_woocommerce() || is_cart() || is_checkout() ) {
 		wp_enqueue_style(
 			'ecs-woocommerce-css',

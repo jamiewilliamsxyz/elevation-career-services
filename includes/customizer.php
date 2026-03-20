@@ -646,13 +646,45 @@ function ecs_register_customizer( $wp_customize ) {
 		)
 	);
 
+	// Contact Page Template
+	$wp_customize->add_section(
+		'ecs_contact_page',
+		array(
+			'title'       => __( 'Contact Page Template', 'elevation-career-services' ),
+			'description' => __( 'Add contact page content here', 'elevation-career-services' ),
+			'priority'    => 31,
+			'capability'  => 'edit_theme_options',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'ecs_contact_page_img',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'esc_url_raw',
+
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'ecs_contact_page_img',
+			array(
+				'priority' => 10,
+				'section'  => 'ecs_contact_page',
+				'label'    => __( 'Image', 'elevation-career-services' ),
+			)
+		)
+	);
+
 	// Footer
 	$wp_customize->add_section(
 		'ecs_footer',
 		array(
 			'title'       => __( 'Footer', 'elevation-career-services' ),
 			'description' => __( 'Add footer details here', 'elevation-career-services' ),
-			'priority'    => 31,
+			'priority'    => 32,
 			'capability'  => 'edit_theme_options',
 		)
 	);
@@ -839,7 +871,7 @@ function ecs_register_customizer( $wp_customize ) {
 		array(
 			'title'       => __( 'Resource Archive', 'elevation-career-services' ),
 			'description' => __( 'Adjust Resource Archive settings here', 'elevation-career-services' ),
-			'priority'    => 32,
+			'priority'    => 33,
 			'capability'  => 'edit_theme_options',
 		)
 	);
