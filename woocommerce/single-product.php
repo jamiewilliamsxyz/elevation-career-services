@@ -6,6 +6,8 @@
 		while ( have_posts() ) :
 			the_post();
 			wc_get_template_part( 'content', 'single-product' );
+			get_template_part( 'template-parts/sections/single-product-featured-services' );
+			get_template_part( 'template-parts/sections/testimonials' );
 		endwhile;
 	endif;
 	?>
