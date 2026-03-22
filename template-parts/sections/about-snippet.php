@@ -12,7 +12,7 @@ if ( ! $content ) {
 ?>
 
 <section class="ecs-section-lg ecs-about-snippet">
-	<div class="ecs-container">
+	<div class="ecs-container ecs-fade-in">
 		<?php if ( $img ) : ?>
 			<img src="<?php echo esc_url( $img ); ?>" alt="<?php esc_attr_e( 'About image', 'elevation-career-services' ); ?>" />
 		<?php endif ?>

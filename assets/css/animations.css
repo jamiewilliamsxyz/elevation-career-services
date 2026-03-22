@@ -1,0 +1,8 @@
+.ecs-fade-in {
+  opacity: 0.4;
+}
+
+.ecs-fade-in.ecs-in-view {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}

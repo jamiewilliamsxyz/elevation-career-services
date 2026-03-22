@@ -17,7 +17,7 @@ $thumbnail = $args['thumbnail'] ?? '';
 		>
 	<?php endif; ?>
 
-	<div class="ecs-container">
+	<div class="ecs-container ecs-fade-in">
 		<h1><?php echo esc_html( $title ); ?></h1>
 		
 		<?php if ( $subtitle ) : ?>

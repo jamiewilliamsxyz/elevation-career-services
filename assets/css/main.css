@@ -25,6 +25,9 @@
 @import url("sections/about-snippet.css");
 @import url("sections/cta-banner.css");
 
+/* Animations */
+@import url("animations.css");
+
 /* Other */
 img {
   border-radius: var(--ecs-border-radius-sm);

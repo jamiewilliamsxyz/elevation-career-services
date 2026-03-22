@@ -10,7 +10,7 @@ $link       = get_theme_mod( 'ecs_featured_services_link' );
 ?>
 
 <section class="ecs-section-lg ecs-featured-services">
-	<div class="ecs-container">
+	<div class="ecs-container ecs-fade-in">
 		<div class="ecs-featured-services-titles">
 			<?php
 			if ( $heading ) :

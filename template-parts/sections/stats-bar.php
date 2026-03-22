@@ -26,7 +26,7 @@ foreach ( $stats as $stat ) {
 if ( $has_stats ) :
 	?>
 	<section class="ecs-section-sm ecs-stats-bar">
-		<div class="ecs-container">
+		<div class="ecs-container ecs-fade-in">
 			<?php
 			foreach ( $stats as $stat ) :
 				if ( $stat['num'] && $stat['text'] ) :

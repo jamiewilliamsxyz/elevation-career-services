@@ -7,7 +7,7 @@ $img        = get_theme_mod( 'ecs_hero_img' );
 ?>
 
 <section class="ecs-section-lg ecs-hero">
-	<div class="ecs-container">
+	<div class="ecs-container ecs-fade-in">
 		<div class="ecs-hero-col">
 			<h1><?php echo esc_html( $heading ); ?></h1>
 			<p><?php echo esc_html( $subheading ); ?></p>
