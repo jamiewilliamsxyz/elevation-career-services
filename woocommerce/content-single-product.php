@@ -26,8 +26,26 @@
 				</div>
 				
 				<div class="ecs-single-product-btns-container">
-					<a class="ecs-btn-outlined" href="<?php echo wc_get_page_permalink( 'shop' ); ?>"><?php esc_html_e( 'Back to Services', 'elevation-career-services' ); ?></a>
-					<?php woocommerce_template_single_add_to_cart(); ?>
+					<a class="ecs-btn-outlined" href="<?php echo wc_get_page_permalink( 'shop' ); ?>"><?php esc_html_e( 'Back to services', 'elevation-career-services' ); ?></a>
+
+					<?php
+					// Check if product is in basket
+					$cart_item_key = WC()->cart->find_product_in_cart(
+						WC()->cart->generate_cart_id( $product->get_id() )
+					);
+
+					// Show view basket button if product is in basket
+					if ( $cart_item_key ) :
+						?>
+						<a class="ecs-btn" href="<?php echo esc_url( wc_get_cart_url() ); ?>">
+							<?php esc_html_e( 'View basket', 'elevation-career-services' ); ?>
+						</a>
+						<?php
+						// Show add to basket button if product isn't in basket
+					else :
+						woocommerce_template_single_add_to_cart();
+					endif;
+					?>
 				</div>
 			</div>
 		</div>
