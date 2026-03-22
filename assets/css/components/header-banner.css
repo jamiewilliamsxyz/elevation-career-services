@@ -5,6 +5,7 @@
   height: fit-content;
   position: relative;
   padding: 3.25rem 0;
+  overflow: hidden;
 }
 
 .ecs-header-banner-has-img::before {
