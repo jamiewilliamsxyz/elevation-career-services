@@ -64,6 +64,11 @@
   max-width: fit-content;
 }
 
+.ecs-single-product-btns-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
 @media (min-width: 782px) {
   .ecs-single-product-content {
     gap: 3.5rem;

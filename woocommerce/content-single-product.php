@@ -24,8 +24,11 @@
 						<div class="ecs-text-sm ecs-product-card-desc"><?php wp_kses_post( the_field( 'ecs_how_it_works' ) ); ?></div>
 					</div>
 				</div>
-
-				<?php woocommerce_template_single_add_to_cart(); ?>
+				
+				<div class="ecs-single-product-btns-container">
+					<a class="ecs-btn-outlined" href="<?php echo wc_get_page_permalink( 'shop' ); ?>"><?php esc_html_e( 'Back to Services', 'elevation-career-services' ); ?></a>
+					<?php woocommerce_template_single_add_to_cart(); ?>
+				</div>
 			</div>
 		</div>
 	</div>

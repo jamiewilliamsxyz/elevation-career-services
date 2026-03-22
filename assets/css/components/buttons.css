@@ -2,7 +2,8 @@
 .single_add_to_cart_button,
 .checkout-button,
 #place_order,
-.ecs-navbar-btn {
+.ecs-navbar-btn,
+.ecs-btn-outlined {
   padding: 0.7rem 1.33rem;
   border-radius: var(--ecs-border-radius);
   color: white;
@@ -50,7 +51,8 @@ a.ecs-btn:active {
 
 a.ecs-btn,
 .checkout-button,
-.ecs-navbar-btn {
+.ecs-navbar-btn,
+.ecs-btn-outlined {
   text-decoration: none;
   line-height: normal;
   text-align: center;
@@ -58,6 +60,23 @@ a.ecs-btn,
 
 a.ecs-btn:hover,
 .checkout-button:hover,
-.ecs-navbar-btn:hover {
+.ecs-navbar-btn:hover,
+.ecs-btn-outlined:hover {
   color: white;
+}
+
+.ecs-btn-outlined {
+  box-sizing: border-box;
+  background: none;
+  color: var(--wp--preset--color--primary);
+  border: solid 1px var(--wp--preset--color--primary);
+}
+
+.ecs-btn-outlined:hover {
+  background-color: var(--wp--preset--color--primary);
+}
+
+.ecs-btn-outlined:active {
+  color: white;
+  background-color: var(--ecs-primary-hover-colour);
 }
