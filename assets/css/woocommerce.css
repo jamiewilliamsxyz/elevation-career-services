@@ -163,7 +163,7 @@
 }
 
 .ecs-cart-item-remove > a:hover {
-  color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--text);
 }
 
 .ecs-cart-collaterals {
