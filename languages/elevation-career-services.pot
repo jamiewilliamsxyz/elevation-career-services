@@ -1,0 +1,553 @@
+# Copyright (C) 2026 Jamie Williams
+# This file is distributed under the GNU General Public License v2.0 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Elevation Career Services 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/elevation-career-services\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-03-25T09:14:53+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: elevation-career-services\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Elevation Career Services"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/jamiewilliamsxyz/elevation-career-services"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A custom hybrid WordPress theme for Elevation Career Services - a professional CV writing, cover letter and interview coaching business. Built with classic theme architecture, custom Gutenberg blocks, ACF and WooCommerce."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Jamie Williams"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://github.com/jamiewilliamsxyz"
+msgstr ""
+
+#: footer.php:69
+msgid "Get In Touch"
+msgstr ""
+
+#: header.php:39
+#: header.php:47
+msgid "View Services"
+msgstr ""
+
+#: includes/customizer.php:13
+msgid "Front Page"
+msgstr ""
+
+#: includes/customizer.php:14
+msgid "Add front page content here"
+msgstr ""
+
+#: includes/customizer.php:23
+msgid "Hero"
+msgstr ""
+
+#: includes/customizer.php:24
+msgid "Add hero section content here"
+msgstr ""
+
+#: includes/customizer.php:45
+#: includes/customizer.php:306
+#: includes/customizer.php:404
+#: includes/customizer.php:458
+#: includes/customizer.php:577
+msgid "Heading"
+msgstr ""
+
+#: includes/customizer.php:47
+msgid "e.g. Welcome to Our Website"
+msgstr ""
+
+#: includes/customizer.php:67
+#: includes/customizer.php:328
+#: includes/customizer.php:426
+#: includes/customizer.php:599
+msgid "Subheading"
+msgstr ""
+
+#: includes/customizer.php:69
+msgid "A short description of what you do..."
+msgstr ""
+
+#: includes/customizer.php:89
+#: includes/customizer.php:621
+msgid "Button Text"
+msgstr ""
+
+#: includes/customizer.php:91
+msgid "e.g. Get Started"
+msgstr ""
+
+#: includes/customizer.php:111
+#: includes/customizer.php:642
+msgid "Button Link"
+msgstr ""
+
+#: includes/customizer.php:113
+#: includes/customizer.php:374
+msgid "e.g. /services"
+msgstr ""
+
+#: includes/customizer.php:134
+#: includes/customizer.php:547
+#: includes/customizer.php:676
+msgid "Image"
+msgstr ""
+
+#: includes/customizer.php:142
+msgid "Stats Bar"
+msgstr ""
+
+#: includes/customizer.php:143
+msgid "Add stats bar content here"
+msgstr ""
+
+#: includes/customizer.php:164
+msgid "Stat 1 Number"
+msgstr ""
+
+#: includes/customizer.php:166
+msgid "e.g. 100+"
+msgstr ""
+
+#: includes/customizer.php:186
+msgid "Stat 1 Text"
+msgstr ""
+
+#: includes/customizer.php:188
+msgid "e.g. Happy Clients"
+msgstr ""
+
+#: includes/customizer.php:208
+msgid "Stat 2 Number"
+msgstr ""
+
+#: includes/customizer.php:210
+msgid "e.g. 99%"
+msgstr ""
+
+#: includes/customizer.php:230
+msgid "Stat 2 Text"
+msgstr ""
+
+#: includes/customizer.php:232
+msgid "e.g. Success Rate"
+msgstr ""
+
+#: includes/customizer.php:252
+msgid "Stat 3 Number"
+msgstr ""
+
+#: includes/customizer.php:254
+msgid "e.g. 40+"
+msgstr ""
+
+#: includes/customizer.php:274
+msgid "Stat 3 Text"
+msgstr ""
+
+#: includes/customizer.php:276
+msgid "e.g. Issues Solved"
+msgstr ""
+
+#: includes/customizer.php:284
+msgid "Featured Services"
+msgstr ""
+
+#: includes/customizer.php:285
+msgid "Add featured services section content here"
+msgstr ""
+
+#: includes/customizer.php:308
+msgid "e.g. Featured Services"
+msgstr ""
+
+#: includes/customizer.php:330
+#: includes/customizer.php:428
+msgid "A brief tagline for this section..."
+msgstr ""
+
+#: includes/customizer.php:350
+#: includes/customizer.php:502
+msgid "Link Text"
+msgstr ""
+
+#: includes/customizer.php:352
+msgid "e.g. View More"
+msgstr ""
+
+#: includes/customizer.php:372
+#: includes/customizer.php:524
+msgid "Link"
+msgstr ""
+
+#: includes/customizer.php:382
+msgid "Testimonials"
+msgstr ""
+
+#: includes/customizer.php:383
+msgid "Add testimonials section content here"
+msgstr ""
+
+#: includes/customizer.php:406
+msgid "e.g. Testimonials"
+msgstr ""
+
+#: includes/customizer.php:436
+msgid "About Snippet"
+msgstr ""
+
+#: includes/customizer.php:437
+msgid "Add about snippet content here"
+msgstr ""
+
+#: includes/customizer.php:460
+msgid "e.g. About Our Company"
+msgstr ""
+
+#: includes/customizer.php:480
+msgid "Content"
+msgstr ""
+
+#: includes/customizer.php:482
+msgid "Tell your story here..."
+msgstr ""
+
+#: includes/customizer.php:504
+msgid "e.g. Learn More"
+msgstr ""
+
+#: includes/customizer.php:526
+msgid "e.g. /about"
+msgstr ""
+
+#: includes/customizer.php:555
+msgid "CTA Banner"
+msgstr ""
+
+#: includes/customizer.php:556
+msgid "Add CTA banner content here"
+msgstr ""
+
+#: includes/customizer.php:579
+msgid "e.g. Ready to Get Started?"
+msgstr ""
+
+#: includes/customizer.php:601
+msgid "e.g. Get in touch today"
+msgstr ""
+
+#: includes/customizer.php:623
+msgid "e.g. Contact Us"
+msgstr ""
+
+#: includes/customizer.php:644
+msgid "e.g. /contact"
+msgstr ""
+
+#: includes/customizer.php:653
+msgid "Contact Page Template"
+msgstr ""
+
+#: includes/customizer.php:654
+msgid "Add contact page content here"
+msgstr ""
+
+#: includes/customizer.php:685
+msgid "Footer"
+msgstr ""
+
+#: includes/customizer.php:686
+msgid "Add footer details here"
+msgstr ""
+
+#: includes/customizer.php:707
+msgid "Company Tagline"
+msgstr ""
+
+#: includes/customizer.php:709
+msgid "Enter tagline here..."
+msgstr ""
+
+#: includes/customizer.php:729
+msgid "Email Address"
+msgstr ""
+
+#: includes/customizer.php:751
+msgid "Phone Number"
+msgstr ""
+
+#: includes/customizer.php:773
+msgid "Address"
+msgstr ""
+
+#: includes/customizer.php:795
+msgid "Copyright Name"
+msgstr ""
+
+#: includes/customizer.php:817
+msgid "Facebook URL"
+msgstr ""
+
+#: includes/customizer.php:839
+msgid "Instagram URL"
+msgstr ""
+
+#: includes/customizer.php:861
+msgid "LinkedIn URL"
+msgstr ""
+
+#: includes/customizer.php:872
+msgid "Resource Archive"
+msgstr ""
+
+#: includes/customizer.php:873
+msgid "Adjust Resource Archive settings here"
+msgstr ""
+
+#: includes/customizer.php:895
+msgid "Banner Image"
+msgstr ""
+
+#: includes/theme-setup.php:35
+msgid "Navbar Menu Location"
+msgstr ""
+
+#: includes/theme-setup.php:36
+msgid "Footer Menu Location"
+msgstr ""
+
+#: includes/woocommerce.php:20
+msgid "Buy Now"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Contact page"
+msgstr ""
+
+#: page-contact.php:32
+msgid "Contact page image"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Wide page"
+msgstr ""
+
+#: template-parts/components/no-posts.php:5
+msgid "No services found"
+msgstr ""
+
+#: template-parts/components/no-posts.php:7
+msgid "No posts found"
+msgstr ""
+
+#: template-parts/components/pagination.php:8
+msgid "Next"
+msgstr ""
+
+#: template-parts/content/content.php:7
+msgid "Read more"
+msgstr ""
+
+#: template-parts/sections/about-snippet.php:17
+msgid "About image"
+msgstr ""
+
+#: template-parts/sections/hero.php:21
+msgid "Hero image"
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:8
+msgid "Return to Services"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:5
+msgid "Order Totals"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:9
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:26
+#, php-format
+msgid "(estimated for %s)"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:52
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/cart.php:5
+msgid "Your Items"
+msgstr ""
+
+#: woocommerce/cart/cart.php:49
+msgid "Remove"
+msgstr ""
+
+#: woocommerce/content-product.php:31
+msgid "Find Out More"
+msgstr ""
+
+#: woocommerce/content-single-product.php:18
+msgid "What's Included"
+msgstr ""
+
+#: woocommerce/content-single-product.php:23
+msgid "How It Works"
+msgstr ""
+
+#: woocommerce/content-single-product.php:29
+msgid "Back to services"
+msgstr ""
+
+#: woocommerce/content-single-product.php:41
+msgid "View basket"
+msgstr ""
+
+#: blocks/build/featured-services/index.js:1
+#: blocks/build/testimonials-slider/index.js:1
+#: blocks/src/featured-services/edit.js:11
+#: blocks/src/testimonials-slider/edit.js:11
+msgid "Settings"
+msgstr ""
+
+#: blocks/build/featured-services/index.js:1
+#: blocks/src/featured-services/edit.js:13
+msgid "Number of service cards to show"
+msgstr ""
+
+#: blocks/build/featured-services/index.js:1
+#: blocks/build/testimonials-slider/index.js:1
+#: blocks/src/featured-services/edit.js:27
+#: blocks/src/testimonials-slider/edit.js:27
+msgid "Featured Services Block"
+msgstr ""
+
+#: blocks/build/testimonials-slider/index.js:1
+#: blocks/src/testimonials-slider/edit.js:13
+msgid "Number of testimonials to show"
+msgstr ""
+
+#: blocks/build/featured-services/block.json
+#: blocks/src/featured-services/block.json
+msgctxt "block title"
+msgid "Featured Services"
+msgstr ""
+
+#: blocks/build/featured-services/block.json
+#: blocks/src/featured-services/block.json
+msgctxt "block description"
+msgid "Displays featured services pulled from WooCommerce products."
+msgstr ""
+
+#: blocks/build/testimonials-slider/block.json
+#: blocks/src/testimonials-slider/block.json
+msgctxt "block title"
+msgid "Testimonials Slider"
+msgstr ""
+
+#: blocks/build/testimonials-slider/block.json
+#: blocks/src/testimonials-slider/block.json
+msgctxt "block description"
+msgid "Displays client testimonials in a slider, pulled from the Testimonials post type."
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary Dark"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral Mid"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Normal"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XXL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Display"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Heading Font"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Body Font"
+msgstr ""
