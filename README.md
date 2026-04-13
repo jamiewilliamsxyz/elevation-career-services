@@ -4,7 +4,7 @@
   
 A custom hybrid WordPress theme built for a fictional career services company. Classic PHP theme architecture with `theme.json`, two dynamic custom Gutenberg blocks, WooCommerce for selling services and ACF for custom fields and post types - built as a portfolio project to demonstrate real-world WordPress development.
   
-💻 [Live Site]()
+💻 [Live Site](https://elevationcareerservices.site)
 
 <br />
 
